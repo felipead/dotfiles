@@ -6,7 +6,7 @@ source_dir=`pwd`
 target_dir="${sublime_home}/Packages/User"
 
 
-for i in Preferences Python Ruby
+for i in Preferences Python Ruby JavaScript
 do
     rm -f "${target_dir}/${i}.sublime-settings"
     ln -s "${source_dir}/${i}.sublime-settings" "${target_dir}/${i}.sublime-settings"
