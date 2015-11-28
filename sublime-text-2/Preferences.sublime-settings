@@ -1,8 +1,11 @@
 {
-  "color_scheme": "Packages/Color Scheme - Default/Monokai Bright.tmTheme",
-  "font_size": 15.0,
-
-  "translate_tabs_to_spaces": true,
-  "word_wrap": false,
-  "tab_size": 4
+	"color_scheme": "Packages/Color Scheme - Default/Monokai Bright.tmTheme",
+	"font_size": 18.0,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"tab_size": 4,
+	"translate_tabs_to_spaces": true,
+	"word_wrap": false
 }
