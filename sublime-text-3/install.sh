@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sublime_home="${HOME}/Library/Application Support/Sublime Text 2"
+sublime_home="${HOME}/Library/Application Support/Sublime Text 3"
 
 source_dir=`pwd`
 target_dir="${sublime_home}/Packages/User"
