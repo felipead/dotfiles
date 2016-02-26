@@ -16,12 +16,13 @@ install_settings() {
     do
         TARGET_FILE=${TARGET_DIR}/${ASSET}
         SOURCE_FILE=${SOURCE_DIR}/${ASSET}
-        if [ -f "${SOURCE_FILE}" ]; then
+        if [ ! -f "${SOURCE_FILE}" ]; then
+            echo "${SOURCE_FILE} not found! Are you running this script inside its directory?"
+            exit
+        else
             rm -f "${TARGET_FILE}"
             ln -s "${SOURCE_FILE}" "${TARGET_FILE}"
-            echo "Installed settings ${TARGET_FILE} from ${SOURCE_FILE}"
-        else
-            echo "${SOURCE_FILE} not found! Are you running this script inside its directory?"
+            echo "Installed settings ${TARGET_FILE} from ${SOURCE_DIR}"
         fi
     done
 }
