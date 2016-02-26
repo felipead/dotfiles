@@ -1,7 +1,8 @@
 #!/bin/bash
 
+SUBLIME_HOME="${HOME}/Library/Application Support/Sublime Text 3"
+
 install_settings() {
-    SUBLIME_HOME="${HOME}/Library/Application Support/Sublime Text 3"
     SOURCE_DIR=$(pwd)
     TARGET_DIR="${SUBLIME_HOME}/Packages/User"
 
@@ -20,4 +21,13 @@ install_settings() {
     done
 }
 
+install_package_control() {
+    TARGET_DIR="${SUBLIME_HOME}/Installed Packages"
+    PACKAGE="Package Control.sublime-package"
+    
+    curl -fsSL "https://packagecontrol.io/Package%20Control.sublime-package" -o "${PACKAGE}"
+    mv "${PACKAGE}" "${TARGET_DIR}"
+}
+
 install_settings
+install_package_control
