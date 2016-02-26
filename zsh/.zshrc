@@ -1,6 +1,6 @@
 export ZSH=~/.oh-my-zsh
 
-ZSH_THEME="minimal"
+ZSH_THEME="sorin"
 
 CASE_SENSITIVE="false"
 HYPHEN_INSENSITIVE="true"
