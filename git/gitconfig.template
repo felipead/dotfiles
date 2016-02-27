@@ -1,0 +1,5 @@
+[user]
+    name = __GIT_NAME__
+    email = __GIT_EMAIL__
+[push]
+    default = simple
