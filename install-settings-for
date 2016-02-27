@@ -1,0 +1,27 @@
+#!/bin/bash
+
+check_arguments() {
+    if [ -z "$1" ]
+    then
+        echo "Usage: install-settings-for <tool>, where <tool> is the name of the tool to install settings for."
+        exit 0
+    fi
+}
+
+check_if_settings_for_tool_exist() {
+    if [ ! -e "$1" ]
+    then
+        echo "Could not find settings for tool $1."
+        exit -1
+    fi
+}
+
+install_settings_for_tool() {
+    TOOL=$(echo "$1" | tr [:upper:] [:lower:])
+    check_if_settings_for_tool_exist $TOOL
+    cd "$TOOL"
+    sh ./install.sh
+}
+
+check_arguments $@
+install_settings_for_tool $1
