@@ -3,7 +3,7 @@
 install_oh_my_zsh() {
     echo "Installing Oh My Zsh..."
     INSTALL_SCRIPT="install-oh-my-zsh.sh"
-    wget -nv "https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh" -O ${INSTALL_SCRIPT}
+    curl -fsSL "https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh" -o ${INSTALL_SCRIPT}
     SHELL="zsh" sh ${INSTALL_SCRIPT}
     rm -f ${INSTALL_SCRIPT}
 }
