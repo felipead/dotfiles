@@ -3,3 +3,22 @@
     email = __GIT_EMAIL__
 [push]
     default = simple
+
+[core]
+    # requires http://github.com/so-fancy/diff-so-fancy to be installed first
+    pager = diff-highlight | diff-so-fancy | less -r
+
+[color]
+    ui = always
+[color "diff"]
+    meta = yellow bold
+    commit = green bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
+[color "diff-highlight"]
+    oldNormal = red bold
+    oldHighlight = "red bold 52"
+    newNormal = "green bold"
+    newHighlight = "green bold 22"
