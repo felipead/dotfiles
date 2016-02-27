@@ -1,7 +1,7 @@
 #!/bin/bash
 
-GITCONFIG_TEMPLATE_FILE="gitconfig.template"
-LOCAL_GITCONFIG_FILE="gitconfig.local"
+GITCONFIG_TEMPLATE_FILE=".gitconfig.template"
+LOCAL_GITCONFIG_FILE=".gitconfig.local"
 INSTALLED_GITCONFIG_FILE=".gitconfig"
 
 check_directory() {
