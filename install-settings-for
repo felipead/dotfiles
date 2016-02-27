@@ -9,9 +9,9 @@ check_arguments() {
 }
 
 check_if_settings_for_tool_exist() {
-    if [ ! -e "$1" ]
+    if [ ! -d "$1" ]
     then
-        echo "Could not find settings for tool $1."
+        echo "Could not find settings for $1."
         exit -1
     fi
 }
