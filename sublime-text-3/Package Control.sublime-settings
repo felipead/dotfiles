@@ -1,7 +1,10 @@
 {
-  "bootstrapped": true,
-  "in_process_packages": [],
-  "installed_packages": [
-    "Markdown Preview"
-  ]
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Markdown Preview"
+	]
 }
