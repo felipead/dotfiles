@@ -14,8 +14,7 @@ install_settings() {
             echo "${SOURCE_FILE} not found! Are you running this script inside its directory?"
             exit
         else
-            rm -f "${TARGET_FILE}"
-            ln -s "${SOURCE_FILE}" "${TARGET_FILE}"
+            ln -sf "${SOURCE_FILE}" "${TARGET_FILE}"
             echo "Installed settings ${TARGET_FILE} from ${SOURCE_DIR}"
         fi
     done
