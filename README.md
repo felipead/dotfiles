@@ -20,6 +20,8 @@ where `<tool>` is the name of the tool to install settings for. Currently, the f
 
 To get more information about the settings for a specific tool, enter its directory and read its documentation.
 
+This script is idepomtent, i.e., running it once or several times should produce the same outcome. If the settings are already installed, it will update them with the latest version.
+
 ## License
 
 [MIT](LICENSE)
