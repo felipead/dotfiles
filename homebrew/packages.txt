@@ -6,3 +6,4 @@ go
 git
 diff-so-fancy
 tree
+imagemagick
