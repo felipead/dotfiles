@@ -20,6 +20,11 @@ export LANG=en_US.UTF-8
 export ARCHFLAGS="-arch x86_64"
 export EDITOR='subl'
 
+export RBENV_ROOT="/usr/local/var/rbenv"
+if which rbenv > /dev/null; then
+    eval "$(rbenv init -)"
+fi
+
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH="/usr/local/heroku/bin:$PATH"
-export PATH="~/.rbenv/shims:$PATH"
+export PATH="/usr/local/var/rbenv/shims:$PATH"
