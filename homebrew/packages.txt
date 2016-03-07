@@ -1,6 +1,6 @@
 python
 python3
-ruby
+rbenv
 node
 go
 git

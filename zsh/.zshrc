@@ -22,3 +22,4 @@ export EDITOR='subl'
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="~/.rbenv/shims:$PATH"
