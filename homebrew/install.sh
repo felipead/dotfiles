@@ -5,13 +5,22 @@ update_homebrew() {
     brew update
 }
 
-install_packages() {
-    for PACKAGE in $(< 'packages.txt')
+install_taps() {
+    for TAP in $(< 'taps.txt')
     do
-        echo "Installing $PACKAGE..."
-        brew install "$PACKAGE"
+        echo "Tapping $TAP..."
+        brew tap "$TAP"
+    done
+}
+
+install_bottles() {
+    for BOTTLE in $(< 'bottles.txt')
+    do
+        echo "Installing $BOTTLE..."
+        brew install "$BOTTLE"
     done
 }
 
 update_homebrew
-install_packages
+install_taps
+install_bottles
