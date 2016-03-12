@@ -1,8 +1,10 @@
 #!/bin/bash
 
-update_homebrew() {
+update() {
     echo "Updating Homebrew..."
     brew update
+    echo "Updating Homebrew Cask..."
+    brew cask update
 }
 
 install_taps() {
@@ -16,11 +18,20 @@ install_taps() {
 install_bottles() {
     for BOTTLE in $(< 'bottles.txt')
     do
-        echo "Installing $BOTTLE..."
+        echo "Installing bottle $BOTTLE..."
         brew install "$BOTTLE"
     done
 }
 
-update_homebrew
+install_casks() {
+    for CASK in $(< 'casks.txt')
+    do
+        echo "Installing cask $CASK..."
+        brew cask install "$CASK"
+    done
+}
+
+update
 install_taps
 install_bottles
+install_casks
