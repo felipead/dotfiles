@@ -7,4 +7,4 @@ On Mac OS X these settings should be copied to folder `~/Library/Application Sup
 
 There's a `install.sh` script, just run it. The script will also install [Package Control](https://packagecontrol.io).
 
-The `create-shell-command.sh` script will create a `subl` shortcut so you can call Sublime Text on the command line (I personally find it very useful).
+The `create-shell-command.sh` script will create a `subl` shortcut so you can call Sublime Text from the command line (I personally find it very useful).
