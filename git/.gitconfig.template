@@ -27,10 +27,9 @@
     newHighlight = "green bold 22"
 
 [alias]
-    c = commit
+    co = commit
     pr = pull -r
-    p = push
+    ps = push
     st = status -s
-    co = checkout
     df = diff
-    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+    lg = log --oneline

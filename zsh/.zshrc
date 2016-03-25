@@ -31,4 +31,3 @@ export PATH="/usr/local/var/rbenv/shims:$PATH"
 # Custom aliases
 
 alias g='git'
-alias g='git'
