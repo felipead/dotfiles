@@ -1,7 +1,5 @@
 {
-	"auto_match_enabled": false,
 	"color_scheme": "Packages/Color Scheme - Default/Amy.tmTheme",
-	"ensure_newline_at_eof_on_save": true,
 	"font_size": 16.0,
 	"ignored_packages":
 	[
@@ -9,6 +7,8 @@
 	],
 	"tab_size": 4,
 	"translate_tabs_to_spaces": true,
+	"auto_match_enabled": false,
 	"trim_trailing_white_space_on_save": true,
+	"ensure_newline_at_eof_on_save": true,
 	"word_wrap": "auto"
 }
