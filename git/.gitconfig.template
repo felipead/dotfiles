@@ -28,6 +28,7 @@
 
 [alias]
     co = commit
+    cm = commit -m
     pr = pull -r
     ps = push
     st = status -s
