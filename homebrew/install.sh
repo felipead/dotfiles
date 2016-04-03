@@ -15,14 +15,6 @@ install_taps() {
     done
 }
 
-install_bottles() {
-    for BOTTLE in $(< 'bottles.txt')
-    do
-        echo "Installing bottle $BOTTLE..."
-        brew install "$BOTTLE"
-    done
-}
-
 install_casks() {
     for CASK in $(< 'casks.txt')
     do
@@ -31,7 +23,15 @@ install_casks() {
     done
 }
 
+install_bottles() {
+    for BOTTLE in $(< 'bottles.txt')
+    do
+        echo "Installing bottle $BOTTLE..."
+        brew install "$BOTTLE"
+    done
+}
+
 update
 install_taps
-install_bottles
 install_casks
+install_bottles

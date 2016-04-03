@@ -1,10 +1,13 @@
 python
 python3
+ruby
 rbenv
+gradle
 node
 go
 git
 diff-so-fancy
 tree
+vim
 imagemagick
 mitmproxy

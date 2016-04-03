@@ -1,0 +1,14 @@
+virtualbox
+dockertoolbox
+java
+flux
+appcleaner
+the-unarchiver
+name-mangler
+firefox
+dropbox
+skype
+netspot
+cog
+vlc
+transmission
