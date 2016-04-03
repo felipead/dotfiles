@@ -1,37 +1,45 @@
 #!/bin/bash
 
-update() {
-    echo "Updating Homebrew..."
+update_homebrew() {
+    echo 'Updating Homebrew...'
     brew update
-    echo "Updating Homebrew Cask..."
+}
+
+update_homebrew_cask() {
+    echo 'Updating Homebrew Cask...'
     brew cask update
 }
 
+load_list_of() {
+    echo $(cat "$1/versioned.txt" "$1/local.txt")
+}
+
 install_taps() {
-    for TAP in $(< 'taps.txt')
+    for tap in $(load_list_of taps)
     do
-        echo "Tapping $TAP..."
-        brew tap "$TAP"
+        echo "Tapping $tap..."
+        brew tap "$tap"
     done
 }
 
 install_casks() {
-    for CASK in $(< 'casks.txt')
+    update_homebrew_cask
+    for cask in $(load_list_of casks)
     do
-        echo "Installing cask $CASK..."
-        brew cask install "$CASK"
+        echo "Installing cask $cask..."
+        brew cask install "$cask"
     done
 }
 
 install_bottles() {
-    for BOTTLE in $(< 'bottles.txt')
+    for bottle in $(load_list_of bottles)
     do
-        echo "Installing bottle $BOTTLE..."
-        brew install "$BOTTLE"
+        echo "Installing bottle $bottle..."
+        brew install "$bottle"
     done
 }
 
-update
+update_homebrew
 install_taps
 install_casks
 install_bottles
