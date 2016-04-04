@@ -11,3 +11,7 @@ skype
 netspot
 cog
 vlc
+caskroom/fonts/font-open-sans
+caskroom/fonts/font-source-code-pro
+caskroom/fonts/font-source-sans-pro
+caskroom/fonts/font-hack
