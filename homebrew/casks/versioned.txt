@@ -3,7 +3,6 @@ dockertoolbox
 java
 kaleidoscope
 omnigraffle
-dia
 name-mangler
 appcleaner
 the-unarchiver
