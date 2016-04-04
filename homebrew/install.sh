@@ -38,16 +38,26 @@ prepare_homebrew_cask() {
     brew cask update
 }
 
+is_cask_available() {
+    local cask=$1
+    [[ -z $(brew cask info "$cask" 2>&1 | grep -i 'error: no available cask') ]]
+}
+
 is_cask_installed() {
     local cask=$1
-    [[ -z $(brew cask info "$cask" | grep -i 'not installed') ]]
+    [[ -z $(brew cask info "$cask" 2>&1 | grep -i 'not installed') ]]
 }
 
 install_cask() {
     local cask=$1
-    if ! is_cask_installed "$cask"
+    if ! is_cask_available "$cask"
     then
-        echo "Installing cask $cask..."
+        echo "Error: No available Cask for $cask" >&2
+    elif is_cask_installed "$cask"
+    then
+        echo "Cask $cask: OK"
+    else
+        echo "Installing Cask $cask"
         brew cask install "$cask"
     fi
 }
@@ -60,15 +70,26 @@ install_casks() {
     done
 }
 
+is_bottle_available() {
+    local bottle=$1
+    [[ -z $(brew info "$bottle" 2>&1 | grep -i 'error: no available formula') ]]
+}
+
 is_bottle_installed() {
     local bottle=$1
-    [[ -z $(brew info "$bottle" | grep -i 'not installed') ]]
+    [[ -z $(brew info "$bottle" 2>&1 | grep -i 'not installed') ]]
 }
 
 install_bottle() {
     local bottle=$1
-    if ! is_bottle_installed "$bottle"
+    if ! is_bottle_available "$bottle"
     then
+        echo "Error: No available Bottle for $bottle" >&2
+    elif is_bottle_installed "$bottle"
+    then
+        echo "Bottle $bottle: OK"
+    else
+        echo "Installing Bottle $bottle"
         brew install "$bottle"
     fi
 }
