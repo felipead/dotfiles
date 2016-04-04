@@ -2,12 +2,14 @@ virtualbox
 dockertoolbox
 java
 kaleidoscope
-flux
+omnigraffle
+dia
+name-mangler
 appcleaner
 the-unarchiver
-name-mangler
-firefox
+flux
 dropbox
+firefox
 skype
 netspot
 cog
