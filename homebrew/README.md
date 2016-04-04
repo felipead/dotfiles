@@ -30,7 +30,7 @@ To know more about a specific bottle, use:
 
 The following files control which bottles are going to be installed:
 
-- [`bottles/versioned.txt`](bottles/versioned.txt) contains a list to that will be installed. This list will also be versioned on git and shared among all machines.
+- [`bottles/versioned.txt`](bottles/versioned.txt) contains a list of bottles to be installed. This list will also be versioned on git and shared among all machines.
 - `bottles/local.txt`, if present, is expected to contain a list of bottles that should be installed only on the local machine (they are not supposed to be checked-in under version control).
 
 Casks
@@ -48,5 +48,5 @@ To know more about a specific cask, use:
 
 The following files control which casks are going to be installed:
 
-- [`casks/versioned.txt`](casks/versioned.txt) contains a list of to will be installed. This list will also be versioned on git and shared among all machines.
+- [`casks/versioned.txt`](casks/versioned.txt) contains a list of casks to be installed. This list will also be versioned on git and shared among all machines.
 - `casks/local.txt`, if present, is expected to contain a list of casks that should be installed only on the local machine (they are not supposed to be checked-in under version control).
