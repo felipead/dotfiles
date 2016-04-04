@@ -1,6 +1,7 @@
 virtualbox
 dockertoolbox
 java
+kaleidoscope
 flux
 appcleaner
 the-unarchiver
