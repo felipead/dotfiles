@@ -11,4 +11,3 @@ skype
 netspot
 cog
 vlc
-transmission
