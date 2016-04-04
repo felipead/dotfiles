@@ -7,21 +7,21 @@ update_homebrew() {
 }
 
 load_list_of() {
-    local installables=$1
+    local installables="$1"
     echo $(cat "$installables/versioned.txt" "$installables/local.txt")
 }
 
 is_tap_installed() {
-    local tap=$1
-    [[ $(brew tap | grep $tap) ]]
+    local tap="$1"
+    [[ $(brew tap | grep "$tap") ]]
 }
 
 install_tap() {
-    local tap=$1
-    if ! is_tap_installed $tap
+    local tap="$1"
+    if ! is_tap_installed "$tap"
     then
         echo "Tapping $tap..."
-        brew tap $tap
+        brew tap "$tap"
     else
         echo "Already tapped: $tap"
     fi
@@ -30,7 +30,7 @@ install_tap() {
 install_taps() {
     for tap in $(load_list_of taps)
     do
-        install_tap $tap
+        install_tap "$tap"
     done
 }
 
