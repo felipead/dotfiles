@@ -22,8 +22,6 @@ install_tap() {
     then
         echo "Tapping $tap..."
         brew tap "$tap"
-    else
-        echo "Already tapped: $tap"
     fi
 }
 
@@ -51,8 +49,6 @@ install_cask() {
     then
         echo "Installing cask $cask..."
         brew cask install "$cask"
-    else
-        echo "Already installed $cask"
     fi
 }
 
@@ -64,11 +60,23 @@ install_casks() {
     done
 }
 
+is_bottle_installed() {
+    local bottle=$1
+    [[ -z $(brew info "$bottle" | grep -i 'not installed') ]]
+}
+
+install_bottle() {
+    local bottle=$1
+    if ! is_bottle_installed "$bottle"
+    then
+        brew install "$bottle"
+    fi
+}
+
 install_bottles() {
     for bottle in $(load_list_of bottles)
     do
-        echo "Installing bottle $bottle..."
-        brew install "$bottle"
+        install_bottle "$bottle"
     done
 }
 
