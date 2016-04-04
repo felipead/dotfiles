@@ -15,5 +15,6 @@ caskroom/fonts/font-open-sans
 caskroom/fonts/font-source-code-pro
 caskroom/fonts/font-source-sans-pro
 caskroom/fonts/font-hack
+caskroom/versions/sublime-text3
 caskroom/versions/pycharm-ce
 caskroom/versions/intellij-idea-ce
