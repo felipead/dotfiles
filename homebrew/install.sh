@@ -7,17 +7,17 @@ update_homebrew() {
 }
 
 load_list_of() {
-    local installables="$1"
+    local installables=$1
     echo $(cat "$installables/versioned.txt" "$installables/local.txt")
 }
 
 is_tap_installed() {
-    local tap="$1"
+    local tap=$1
     [[ $(brew tap | grep "$tap") ]]
 }
 
 install_tap() {
-    local tap="$1"
+    local tap=$1
     if ! is_tap_installed "$tap"
     then
         echo "Tapping $tap..."
@@ -40,12 +40,27 @@ prepare_homebrew_cask() {
     brew cask update
 }
 
+is_cask_installed() {
+    local cask=$1
+    [[ -z $(brew cask info "$cask" | grep -i 'not installed') ]]
+}
+
+install_cask() {
+    local cask=$1
+    if ! is_cask_installed "$cask"
+    then
+        echo "Installing cask $cask..."
+        brew cask install "$cask"
+    else
+        echo "Already installed $cask"
+    fi
+}
+
 install_casks() {
     prepare_homebrew_cask
     for cask in $(load_list_of casks)
     do
-        echo "Installing cask $cask..."
-        brew cask install "$cask"
+        install_cask "$cask"
     done
 }
 
