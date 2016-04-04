@@ -6,9 +6,19 @@ update_homebrew() {
     brew update
 }
 
-load_list_of() {
-    local installables=$1
-    echo $(cat "$installables/versioned.txt" "$installables/local.txt")
+list_installables_from() {
+    local directory=$1
+    for file in 'versioned.txt' 'local.txt'
+    do
+        local path="$directory/$file"
+        if [ -f $path ]
+        then
+            while read line
+            do
+                echo $line
+            done < $path
+        fi
+    done
 }
 
 is_tap_installed() {
@@ -26,7 +36,7 @@ install_tap() {
 }
 
 install_taps() {
-    for tap in $(load_list_of taps)
+    for tap in $(list_installables_from taps)
     do
         install_tap "$tap"
     done
@@ -64,7 +74,7 @@ install_cask() {
 
 install_casks() {
     prepare_homebrew_cask
-    for cask in $(load_list_of casks)
+    for cask in $(list_installables_from casks)
     do
         install_cask "$cask"
     done
@@ -95,7 +105,7 @@ install_bottle() {
 }
 
 install_bottles() {
-    for bottle in $(load_list_of bottles)
+    for bottle in $(list_installables_from bottles)
     do
         install_bottle "$bottle"
     done
