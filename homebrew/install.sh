@@ -57,8 +57,8 @@ install_cask() {
     then
         echo "Cask $cask: OK"
     else
-        echo "Installing Cask $cask"
-        brew cask install "$cask"
+        echo "Installing Cask $cask..."
+        brew cask install --appdir=/Applications "$cask"
     fi
 }
 
@@ -89,7 +89,7 @@ install_bottle() {
     then
         echo "Bottle $bottle: OK"
     else
-        echo "Installing Bottle $bottle"
+        echo "Installing Bottle $bottle..."
         brew install "$bottle"
     fi
 }
