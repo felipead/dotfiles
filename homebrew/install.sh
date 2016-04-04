@@ -1,38 +1,38 @@
 #!/bin/bash
 
-CASK_TAP='caskroom/cask'
 
 update_homebrew() {
     echo 'Updating Homebrew...'
     brew update
 }
 
-ensure_homebrew_cask_is_tapped() {
-    if [[ ! $(brew tap | grep "$CASK_TAP") ]]; then
-        echo 'Tapping Homebrew Cask...'
-        brew tap "$CASK_TAP"
-    fi
-}
-
-update_homebrew_cask() {
-    echo 'Updating Homebrew Cask...'
-    brew cask update
-}
-
 load_list_of() {
     echo $(cat "$1/versioned.txt" "$1/local.txt")
 }
 
+install_tap() {
+    if [[ ! $(brew tap | grep "$1") ]]; then
+        echo "Tapping $1..."
+        brew tap "$1"
+    else
+        echo "Already tapped: $1"
+    fi
+}
+
 install_taps() {
     for tap in $(load_list_of taps); do
-        echo "Tapping $tap..."
-        brew tap "$tap"
+        install_tap "$tap"
     done
 }
 
+prepare_homebrew_cask() {
+    install_tap 'caskroom/cask'
+    echo 'Updating Homebrew Cask...'
+    brew cask update
+}
+
 install_casks() {
-    ensure_homebrew_cask_is_tapped
-    update_homebrew_cask
+    prepare_homebrew_cask
     for cask in $(load_list_of casks); do
         echo "Installing cask $cask..."
         brew cask install "$cask"
