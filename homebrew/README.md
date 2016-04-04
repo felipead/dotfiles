@@ -13,7 +13,7 @@ Taps
 A tap is similar to a repository where homebrew can find more packages, called "bottles". The following files control which taps are going to be installed:
 
 - [`taps/versioned.txt`](taps/versioned.txt) contains a list of taps to be installed. This list will also be versioned on git and shared among all machines.
-- [`taps/local.txt`](taps/local.txt) contains a list of taps that should only be installed on the local machine (should not be checked in).
+- `taps/local.txt`, if present, is expected to contain a list of taps that should be installed only on the local machine (they are not supposed to be checked-in under version control).
 
 Bottles
 -------
@@ -31,7 +31,7 @@ To know more about a specific bottle, use:
 The following files control which bottles are going to be installed:
 
 - [`bottles/versioned.txt`](bottles/versioned.txt) contains a list to that will be installed. This list will also be versioned on git and shared among all machines.
-- [`bottles/local.txt`](bottles/local.txt) contains a list of bottles that should only be installed on the local machine (should not be checked in).
+- `bottles/local.txt`, if present, is expected to contain a list of bottles that should be installed only on the local machine (they are not supposed to be checked-in under version control).
 
 Casks
 -----
@@ -49,4 +49,4 @@ To know more about a specific cask, use:
 The following files control which casks are going to be installed:
 
 - [`casks/versioned.txt`](casks/versioned.txt) contains a list of to will be installed. This list will also be versioned on git and shared among all machines.
-- [`casks/local.txt`](casks/local.txt) contains a list of casks that should only be installed on the local machine (should not be checked in).
+- `casks/local.txt`, if present, is expected to contain a list of casks that should be installed only on the local machine (they are not supposed to be checked-in under version control).
