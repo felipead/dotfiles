@@ -6,18 +6,22 @@ update_homebrew() {
     brew update
 }
 
+read_lines_from() {
+    local file=$1
+    if [ -f $file ]
+    then
+        while read line
+        do
+            echo $line
+        done < $file
+    fi
+}
+
 list_installables_from() {
     local directory=$1
     for file in 'versioned.txt' 'local.txt'
     do
-        local path="$directory/$file"
-        if [ -f $path ]
-        then
-            while read line
-            do
-                echo $line
-            done < $path
-        fi
+        read_lines_from "$directory/$file"
     done
 }
 
