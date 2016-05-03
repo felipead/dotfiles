@@ -2,7 +2,13 @@
 	"auto_match_enabled": false,
 	"color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
 	"ensure_newline_at_eof_on_save": true,
-	"folder_exclude_patterns": ["node_modules", "bower_components", "coverage", "env"],
+	"folder_exclude_patterns":
+	[
+		"node_modules",
+		"bower_components",
+		"coverage",
+		"env"
+	],
 	"font_size": 16.0,
 	"ignored_packages":
 	[
