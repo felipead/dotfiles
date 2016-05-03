@@ -2,6 +2,7 @@ python
 python3
 ruby
 rbenv
+jenv
 gradle
 node
 go
