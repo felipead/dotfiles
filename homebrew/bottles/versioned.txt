@@ -4,6 +4,8 @@ ruby
 rbenv
 jenv
 gradle
+scala
+sbt
 node
 go
 git
