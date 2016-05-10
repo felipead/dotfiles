@@ -43,6 +43,10 @@ if which jenv > /dev/null; then
     eval "$(jenv init -)"
 fi
 
+#========== Scala ================================
+
+export SCALA_HOME="/usr/local/opt/scala/idea"
+
 #========== Heroku ===============================
 
 export PATH="/usr/local/heroku/bin:$PATH"
