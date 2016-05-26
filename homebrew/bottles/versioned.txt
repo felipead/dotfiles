@@ -14,3 +14,4 @@ tree
 vim
 imagemagick
 mitmproxy
+ansible
