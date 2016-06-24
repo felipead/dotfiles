@@ -2,6 +2,7 @@ virtualbox
 dockertoolbox
 java
 kaleidoscope
+spectacle
 omnigraffle
 name-mangler
 appcleaner
