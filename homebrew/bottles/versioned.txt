@@ -6,6 +6,7 @@ jenv
 gradle
 scala
 sbt
+scalastyle
 node
 go
 git
