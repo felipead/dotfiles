@@ -6,6 +6,9 @@
 	"installed_packages":
 	[
 		"Dockerfile Syntax Highlighting",
-		"Markdown Preview"
+		"Indent XML",
+		"Markdown Preview",
+		"Package Control",
+		"Puppet"
 	]
 }
