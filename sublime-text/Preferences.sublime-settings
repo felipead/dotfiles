@@ -1,6 +1,6 @@
 {
 	"auto_match_enabled": false,
-	"color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
+	"color_scheme": "Packages/Color Scheme - Default/Solarized (Light).tmTheme",
 	"ensure_newline_at_eof_on_save": true,
 	"folder_exclude_patterns":
 	[
@@ -14,7 +14,11 @@
 	[
 		"Vintage"
 	],
-	"rulers": [80, 100],
+	"rulers":
+	[
+		80,
+		100
+	],
 	"tab_size": 4,
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
