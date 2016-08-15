@@ -9,7 +9,7 @@
 		"coverage",
 		"env"
 	],
-	"font_size": 16.0,
+	"font_size": 18.0,
 	"ignored_packages":
 	[
 		"Vintage"
