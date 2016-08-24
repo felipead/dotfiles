@@ -16,3 +16,4 @@ vim
 imagemagick
 mitmproxy
 ansible
+ag
