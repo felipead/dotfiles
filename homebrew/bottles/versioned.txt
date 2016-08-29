@@ -10,7 +10,6 @@ scalastyle
 node
 go
 git
-diff-so-fancy
 tree
 vim
 imagemagick
