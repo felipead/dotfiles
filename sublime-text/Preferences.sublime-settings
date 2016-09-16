@@ -4,6 +4,7 @@
 	"ensure_newline_at_eof_on_save": true,
 	"folder_exclude_patterns":
 	[
+		".git",
 		"node_modules",
 		"bower_components",
 		"coverage",
