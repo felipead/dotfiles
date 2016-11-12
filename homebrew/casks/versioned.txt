@@ -10,12 +10,11 @@ appcleaner
 the-unarchiver
 flux
 dropbox
-firefox
-skype
-netspot
+chromium
 cog
 vlc
 soundcleod
+transmission
 caskroom/fonts/font-open-sans
 caskroom/fonts/font-source-code-pro
 caskroom/fonts/font-source-sans-pro
