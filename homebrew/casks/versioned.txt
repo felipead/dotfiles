@@ -1,6 +1,6 @@
 iterm2
 virtualbox
-dockertoolbox
+docker-toolbox
 kaleidoscope
 spectacle
 name-mangler
