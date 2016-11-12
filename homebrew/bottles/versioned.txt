@@ -13,6 +13,5 @@ git
 tree
 vim
 imagemagick
-mitmproxy
 ansible
 ag
