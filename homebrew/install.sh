@@ -1,9 +1,14 @@
 #!/bin/bash
 
-
-update_homebrew() {
+prepare_homebrew() {
     echo 'Updating Homebrew...'
     brew update
+}
+
+prepare_homebrew_cask() {
+    install_tap 'caskroom/cask'
+    echo 'Updating Homebrew Cask...'
+    brew cask update
 }
 
 read_lines_from() {
@@ -46,12 +51,6 @@ install_taps() {
     done
 }
 
-prepare_homebrew_cask() {
-    install_tap 'caskroom/cask'
-    echo 'Updating Homebrew Cask...'
-    brew cask update
-}
-
 is_cask_available() {
     local cask=$1
     [[ -z $(brew cask info "$cask" 2>&1 | grep -i 'error: no available cask') ]]
@@ -72,12 +71,11 @@ install_cask() {
         echo "Cask $cask: OK"
     else
         echo "Installing Cask $cask..."
-        brew cask install --appdir=/Applications "$cask"
+        brew cask install --appdir=/Applications --fontdir=/Library/Fonts "$cask"
     fi
 }
 
 install_casks() {
-    prepare_homebrew_cask
     for cask in $(list_installables_from casks)
     do
         install_cask "$cask"
@@ -116,7 +114,8 @@ install_bottles() {
 }
 
 main() {
-    update_homebrew
+    prepare_homebrew
+    prepare_homebrew_cask
     install_taps
     install_casks
     install_bottles
