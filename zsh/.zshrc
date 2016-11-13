@@ -22,7 +22,7 @@ source $ZSH/oh-my-zsh.sh
 
 export LANG=en_US.UTF-8
 export ARCHFLAGS="-arch x86_64"
-export EDITOR='subl'
+export EDITOR='subl -n'
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 #========== Ruby =================================
