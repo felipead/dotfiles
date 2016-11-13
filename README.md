@@ -10,11 +10,12 @@ Builds and installs my development environment, synchronizing settings across ma
 
 where `<tool>` is the name of the tool to install settings for. Currently, the following are supported:
 
-- [git](git/)
 - [homebrew](homebrew/)
-- [npm](npm/)
-- [sublime-text](sublime-text/)
 - [zsh](zsh/)
+- [git](git/)
+- [sublime-text](sublime-text/)
+- [iterm2](iterm2/)
+- [npm](npm/)
 
 To get more information about the settings for a specific tool, enter its directory and read its documentation.
 
