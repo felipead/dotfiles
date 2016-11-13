@@ -54,4 +54,3 @@ export PATH="/usr/local/heroku/bin:$PATH"
 #========== Other Aliases =======================
 
 alias g='git'
-alias treel='tree -L'
