@@ -1,6 +1,6 @@
 #!/bin/bash
 
-version() {
+copy_properties_to_current_directory() {
     local plist="com.googlecode.iterm2.plist"
     local preferences_dir="${HOME}/Library/Preferences/"
 
@@ -10,4 +10,4 @@ version() {
     echo "Copied $plist to current directory as XML 1.0 property list"
 }
 
-version
+copy_properties_to_current_directory
