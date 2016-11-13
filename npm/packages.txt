@@ -1,4 +1,3 @@
 tldr
-nativefier
 localtunnel
-git-standup
+speed-test
