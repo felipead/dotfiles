@@ -9,7 +9,7 @@ Pre-Requisites:
 
 * Unix-based operating system (Mac OS X or Linux).
 * [Zsh](http://www.zsh.org) should be installed (v4.3.9 or more recent). If not pre-installed (`zsh --version` to confirm), check the following instruction here: [Installing ZSH](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH).
-* `wget` should be installed.
+* `curl` should be installed.
 * `git` should be installed.
 
 There's a `install.sh` script in this folder. Just run it.
