@@ -1,7 +1,10 @@
 iterm2
 virtualbox
 docker-toolbox
+sublime-text
+paw
 kaleidoscope
+java
 spectacle
 name-mangler
 appcleaner
@@ -15,4 +18,3 @@ caskroom/fonts/font-open-sans
 caskroom/fonts/font-source-code-pro
 caskroom/fonts/font-source-sans-pro
 caskroom/fonts/font-hack
-caskroom/versions/sublime-text3
