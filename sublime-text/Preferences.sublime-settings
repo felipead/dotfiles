@@ -10,7 +10,8 @@
 		"coverage",
 		"env"
 	],
-	"font_size": 14.0,
+	"font_face": "Hack",
+	"font_size": 15.0,
 	"ignored_packages":
 	[
 		"Vintage"
