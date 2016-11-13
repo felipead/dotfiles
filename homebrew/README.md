@@ -50,3 +50,12 @@ The following files control which casks are going to be installed:
 
 - [`casks/versioned.txt`](casks/versioned.txt) contains a list of casks to be installed. This list will also be versioned on git and shared among all machines.
 - `casks/local.txt`, if present, is expected to contain a list of casks that should be installed only on the local machine (they are not supposed to be checked-in under version control).
+
+
+### A note regarding the `java` cask
+
+Unfortunately, when installing the `java` cask it installs the latest JDK along with the Java brower plugin. However, this plugin is often unecessary nowaways and it has the potential to expose security vulnerabilities.
+
+If you just want the JDK, you can remove the Java browser plugin and all the bloatware that comes with it using the following script:
+
+    $ ./remove-java-bloatware.sh
