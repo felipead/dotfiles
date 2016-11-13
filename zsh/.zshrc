@@ -3,7 +3,7 @@
 
 export ZSH=~/.oh-my-zsh
 
-ZSH_THEME="sorin"
+ZSH_THEME="norm"
 
 ENABLE_CORRECTION="false"
 COMPLETION_WAITING_DOTS="false"
