@@ -26,5 +26,10 @@ install_settings() {
     done
 }
 
+make_zsh_default_shell() {
+    chsh -s $(which zsh)
+}
+
 install_oh_my_zsh
 install_settings
+make_zsh_default_shell
