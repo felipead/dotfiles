@@ -2,6 +2,7 @@ appcleaner
 chromium
 docker-toolbox
 flux
+gitify
 iterm2
 java
 kaleidoscope
