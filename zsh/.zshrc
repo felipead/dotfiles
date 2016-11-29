@@ -36,6 +36,12 @@ export PATH="/usr/local/var/rbenv/shims:$PATH"
 
 alias be='bundle exec'
 
+#========== Node.js ==============================
+
+export NVM_DIR="$HOME/.nvm"
+mkdir -p "$NVM_DIR"
+. "/usr/local/opt/nvm/nvm.sh"
+
 #========== Java =================================
 
 export JENV_ROOT="/usr/local/var/jenv"
