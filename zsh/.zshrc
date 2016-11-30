@@ -57,6 +57,17 @@ export SCALA_HOME="/usr/local/opt/scala/idea"
 
 export PATH="/usr/local/heroku/bin:$PATH"
 
+#========== Secrets and Sensitive Information ====
+
+local secrets_file="$HOME/.secrets"
+if [ ! -f $secrets_file ]
+then
+    touch $secrets_file
+    chmod 600 $secrets_file
+fi
+
+source $secrets_file
+
 #========== Other Aliases =======================
 
 alias g='git'
