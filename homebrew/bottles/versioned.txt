@@ -16,3 +16,4 @@ sbt
 scala
 tree
 vim
+watch
