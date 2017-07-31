@@ -71,3 +71,7 @@ source $secrets_file
 #========== Other Aliases =======================
 
 alias g='git'
+
+#========== direnv ==============================
+
+eval "$(direnv hook zsh)"

@@ -1,5 +1,6 @@
 ag
 ansible
+direnv
 git
 go
 gradle
