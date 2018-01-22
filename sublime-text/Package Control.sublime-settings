@@ -5,12 +5,13 @@
 	],
 	"installed_packages":
 	[
+		"Case Conversion",
 		"Dockerfile Syntax Highlighting",
 		"GitGutter",
 		"Indent XML",
 		"Markdown Preview",
 		"Package Control",
-		"Ruby Slim",
-		"TypeScript"
+		"TypeScript",
+		"Sass"
 	]
 }
