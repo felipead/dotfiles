@@ -72,6 +72,7 @@ source $secrets_file
 #========== Other Aliases =======================
 
 alias g='git'
+alias pjson='python -m json.tool'
 
 #========== direnv ==============================
 
