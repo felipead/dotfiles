@@ -8,7 +8,8 @@
 		"node_modules",
 		"bower_components",
 		"coverage",
-		"env"
+		"env",
+		"venv"
 	],
 	"font_face": "Hack",
 	"font_size": 15.0,
