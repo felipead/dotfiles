@@ -7,11 +7,8 @@
 	[
 		"Case Conversion",
 		"Dockerfile Syntax Highlighting",
-		"GitGutter",
 		"Indent XML",
-		"Markdown Preview",
-		"Package Control",
-		"TypeScript",
-		"Sass"
+		"MarkdownPreview",
+		"Package Control"
 	]
 }
