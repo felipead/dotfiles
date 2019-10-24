@@ -6,9 +6,7 @@ prepare_homebrew() {
 }
 
 prepare_homebrew_cask() {
-    install_tap 'caskroom/cask'
-    echo 'Updating Homebrew Cask...'
-    brew cask update
+    install_tap 'homebrew/cask-cask'
 }
 
 read_lines_from() {
