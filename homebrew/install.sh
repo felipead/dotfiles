@@ -5,10 +5,6 @@ prepare_homebrew() {
     brew update
 }
 
-prepare_homebrew_cask() {
-    install_tap 'homebrew/cask-cask'
-}
-
 read_lines_from() {
     local file=$1
     if [ -f $file ]
@@ -113,7 +109,6 @@ install_bottles() {
 
 main() {
     prepare_homebrew
-    prepare_homebrew_cask
     install_taps
     install_casks
     install_bottles
