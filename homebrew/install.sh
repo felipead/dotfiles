@@ -110,8 +110,8 @@ install_bottles() {
 main() {
     prepare_homebrew
     install_taps
-    install_bottles
     install_casks
+    install_bottles
 }
 
 main
