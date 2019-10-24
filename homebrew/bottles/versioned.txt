@@ -1,8 +1,6 @@
-ag
-ansible
+awscli
 direnv
 git
-go
 gradle
 heroku
 imagemagick
@@ -10,12 +8,10 @@ jenv
 jq
 node
 nvm
-python
 python3
 rbenv
 ruby
-sbt
-scala
+the_silver_searcher
 tree
 vim
 watch
