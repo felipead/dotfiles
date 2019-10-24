@@ -2,7 +2,6 @@ awscli
 direnv
 git
 gradle
-heroku
 imagemagick
 jenv
 jq
