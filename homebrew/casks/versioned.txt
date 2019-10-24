@@ -23,7 +23,6 @@ postman
 pycharm-ce
 sequel-pro
 sip
-slack
 soapui
 soundcleod
 spectacle
