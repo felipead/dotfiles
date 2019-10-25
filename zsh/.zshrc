@@ -36,8 +36,6 @@ fi
 
 export PATH="/usr/local/var/rbenv/shims:$PATH"
 
-alias be='bundle exec'
-
 #========== Node.js ==============================
 
 export NVM_DIR="$HOME/.nvm"
@@ -72,7 +70,6 @@ source $secrets_file
 #========== Other Aliases =======================
 
 alias g='git'
-alias pjson='python -m json.tool'
 
 #========== direnv ==============================
 
