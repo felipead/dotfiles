@@ -29,6 +29,9 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 #========== Python ================================
 
+alias python='python3'
+alias pip='pip3'
+
 #========== Ruby =================================
 
 export RBENV_ROOT="/usr/local/var/rbenv"
