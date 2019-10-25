@@ -15,7 +15,8 @@ where `<tool>` is the name of the tool to install settings for. Currently, the f
 - [git](git/)
 - [sublime-text](sublime-text/)
 - [iterm2](iterm2/)
-- [npm](npm/)
+- [npm](npm/) - Node.js
+- [pip](pip/) - Python 3
 
 To get more information about the settings for a specific tool, enter its directory and read its documentation.
 
