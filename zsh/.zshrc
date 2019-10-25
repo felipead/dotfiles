@@ -29,13 +29,6 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 #========== Python ================================
 
-# A hack to make the Python "cryptography" package to work
-# Works in conjunction with `brew install openssl`
-# See: https://github.com/pyca/cryptography/issues/2692
-export LDFLAGS="-L/usr/local/opt/openssl/lib"
-export CPPFLAGS="-I/usr/local/opt/openssl/include"
-export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
-
 #========== Ruby =================================
 
 export RBENV_ROOT="/usr/local/var/rbenv"
