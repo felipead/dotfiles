@@ -27,11 +27,6 @@ export ARCHFLAGS="-arch x86_64"
 export EDITOR=subl
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
-#========== Python ================================
-
-alias python='python3'
-alias pip='pip3'
-
 #========== Ruby =================================
 
 export RBENV_ROOT="/usr/local/var/rbenv"
@@ -55,6 +50,13 @@ export JENV_ROOT="/usr/local/var/jenv"
 if which jenv > /dev/null; then
     eval "$(jenv init -)"
 fi
+
+#========== Python ================================
+
+alias python='python3'
+alias pip='pip3'
+
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
 #========== Secrets and Sensitive Information ====
 
