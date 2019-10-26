@@ -13,6 +13,7 @@ where `<tool>` is the name of the tool to install settings for. Currently, the f
 - [homebrew](homebrew/)
 - [zsh](zsh/)
 - [git](git/)
+- [ssh](ssh/)
 - [sublime-text](sublime-text/)
 - [iterm2](iterm2/)
 - [npm](npm/) - Node.js
