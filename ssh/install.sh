@@ -33,9 +33,9 @@ copy_config_template_to_target() {
             echo "Aborted."
             exit -1
         fi
-
-        cp "${CONFIG_TEMPLATE}" "${CONFIG_TARGET}"
     fi
+
+    cp "${CONFIG_TEMPLATE}" "${CONFIG_TARGET}"
 }
 
 add_ssh_identity() {
