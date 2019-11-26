@@ -14,3 +14,4 @@ the_silver_searcher
 tree
 vim
 watch
+ossp-uuid
