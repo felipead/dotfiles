@@ -18,6 +18,7 @@ iterm2
 java
 kaleidoscope
 name-mangler
+omnigraffle
 paw
 postman
 pycharm-ce
