@@ -56,6 +56,8 @@ alias pip='pip3'
 
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
+eval "$(pipenv --completion)"
+
 #========== Secrets and Sensitive Information ====
 
 local secrets_file="$HOME/.secrets"

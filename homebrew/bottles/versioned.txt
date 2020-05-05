@@ -9,6 +9,7 @@ jq
 node
 nvm
 python3
+pipenv
 rbenv
 ruby
 the_silver_searcher
