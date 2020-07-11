@@ -6,10 +6,6 @@ cleanmymac
 docker
 dropbox
 firefox
-caskroom/fonts/font-open-sans
-caskroom/fonts/font-source-code-pro
-caskroom/fonts/font-source-sans-pro
-caskroom/fonts/font-hack
 google-chrome
 grammarly
 intellij-idea-ce
@@ -33,3 +29,7 @@ typora
 vlc
 whatsapp
 zoomus
+homebrew/cask-fonts/font-open-sans
+homebrew/cask-fonts/font-source-code-pro
+homebrew/cask-fonts/font-source-sans-pro
+homebrew/cask-fonts/font-hack
