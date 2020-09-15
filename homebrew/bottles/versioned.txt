@@ -1,5 +1,6 @@
 coreutils
 awscli
+bat
 direnv
 git
 gradle
