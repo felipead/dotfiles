@@ -10,7 +10,6 @@ google-chrome
 grammarly
 intellij-idea-ce
 iterm2
-java
 kaleidoscope
 name-mangler
 omnigraffle
