@@ -1,6 +1,10 @@
 [user]
     name = __GIT_NAME__
     email = __GIT_EMAIL__
+    signingkey = __GIT_GPG_KEY__
+
+[commit]
+    gpgsign = true
 
 [push]
     default = simple

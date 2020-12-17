@@ -27,6 +27,11 @@ export ARCHFLAGS="-arch x86_64"
 export EDITOR=subl
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin"
 
+
+#========== GPG ==================================
+
+export GPG_TTY=$(tty)
+
 #========== Ruby =================================
 
 export RBENV_ROOT="/usr/local/var/rbenv"

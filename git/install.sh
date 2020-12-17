@@ -13,15 +13,15 @@ check_directory() {
 }
 
 check_environment_variables() {
-    if [ -z "${GIT_NAME}" ] || [ -z "${GIT_EMAIL}" ]
+    if [ -z "${GIT_NAME}" ] || [ -z "${GIT_EMAIL}" || [ -z "${GIT_GPG_KEY}" ]
     then
-        echo 'Please set the GIT_NAME and GIT_EMAIL environment variables with the name and e-mail to be used in your git commit messages.'
+        echo 'Please set the GIT_NAME, GIT_EMAIL and GIT_GPG_KEY environment variables with the name, e-mail and GPG key to be used in your git commit messages.'
         exit -1
     fi
 }
 
 create_gitconfig_from_template() {
-    sed -e "s/__GIT_NAME__/${GIT_NAME}/g" -e "s/__GIT_EMAIL__/${GIT_EMAIL}/g" ${GITCONFIG_TEMPLATE_FILE} > ${LOCAL_GITCONFIG_FILE}
+    sed -e "s/__GIT_NAME__/${GIT_NAME}/g" -e "s/__GIT_EMAIL__/${GIT_EMAIL}/g" -e "s/__GIT_GPG_KEY__/${GIT_GPG_KEY}/g" ${GITCONFIG_TEMPLATE_FILE} > ${LOCAL_GITCONFIG_FILE}
 }
 
 install_gitconfig() {
