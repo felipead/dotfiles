@@ -21,3 +21,4 @@ vim
 watch
 ossp-uuid
 gnupg
+postgresql
