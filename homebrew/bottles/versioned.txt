@@ -11,6 +11,7 @@ jq
 node
 nvm
 python3
+pyenv
 pipenv
 rbenv
 ruby

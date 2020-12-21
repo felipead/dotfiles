@@ -27,7 +27,6 @@ export ARCHFLAGS="-arch x86_64"
 export EDITOR=subl
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin"
 
-
 #========== GPG ==================================
 
 export GPG_TTY=$(tty)
@@ -62,6 +61,16 @@ alias pip='pip3'
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
 eval "$(pipenv --completion)"
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+# For building psycopg2. See → https://stackoverflow.com/a/55839410/3297193
+export LDFLAGS="-L/usr/local/opt/openssl/lib"
 
 #========== Secrets and Sensitive Information ====
 
