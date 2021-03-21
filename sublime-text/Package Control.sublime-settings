@@ -12,6 +12,7 @@
 		"Indent XML",
 		"MarkdownPreview",
 		"Package Control",
-		"Sass"
+		"Sass",
+		"Terraform"
 	]
 }
