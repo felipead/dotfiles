@@ -65,7 +65,7 @@ install_cask() {
         echo "Cask $cask: OK"
     else
         echo "Installing Cask $cask..."
-        brew cask install --appdir=/Applications --fontdir=/Library/Fonts "$cask"
+        brew install --cask --appdir=/Applications --fontdir=/Library/Fonts "$cask"
     fi
 }
 
