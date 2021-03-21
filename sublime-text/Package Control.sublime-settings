@@ -5,8 +5,10 @@
 	],
 	"installed_packages":
 	[
+		"A File Icon",
 		"Case Conversion",
 		"Dockerfile Syntax Highlighting",
+		"Github Color Theme",
 		"Indent XML",
 		"MarkdownPreview",
 		"Package Control",
