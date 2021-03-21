@@ -2,6 +2,7 @@ coreutils
 awscli
 bat
 direnv
+golang
 git
 gradle
 imagemagick
