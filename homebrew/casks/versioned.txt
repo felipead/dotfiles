@@ -5,6 +5,7 @@ spectacle
 zoomus
 whatsapp
 grammarly
+viscosity
 
 # Utilities
 the-unarchiver
@@ -12,8 +13,8 @@ name-mangler
 4k-video-downloader
 appcleaner
 cleanmymac
-authy
 coconutbattery
+authy
 
 # Programming
 sublime-text
