@@ -11,6 +11,7 @@ viscosity
 the-unarchiver
 name-mangler
 4k-video-downloader
+loopback
 appcleaner
 cleanmymac
 coconutbattery
