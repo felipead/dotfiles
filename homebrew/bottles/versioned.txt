@@ -39,4 +39,6 @@ postgresql
 redis
 
 # Platforms
+minikube
+kubernetes-cli
 awscli
