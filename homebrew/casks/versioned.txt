@@ -24,6 +24,7 @@ postman
 kaleidoscope
 intellij-idea-ce
 pycharm-ce
+golang
 
 # Music
 spotify
