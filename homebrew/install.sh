@@ -47,12 +47,12 @@ install_taps() {
 
 is_cask_available() {
     local cask=$1
-    [[ -z $(brew cask info "$cask" 2>&1 | grep -i 'error: no available cask') ]]
+    [[ -z $(brew info --cask "$cask" 2>&1 | grep -i 'error: no available cask') ]]
 }
 
 is_cask_installed() {
     local cask=$1
-    [[ -z $(brew cask info "$cask" 2>&1 | grep -i 'not installed') ]]
+    [[ -z $(brew info --cask "$cask" 2>&1 | grep -i 'not installed') ]]
 }
 
 install_cask() {
