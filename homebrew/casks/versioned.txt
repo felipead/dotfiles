@@ -22,6 +22,7 @@ docker
 virtualbox
 paw
 postman
+ngrok
 kaleidoscope
 intellij-idea-ce
 pycharm-ce
