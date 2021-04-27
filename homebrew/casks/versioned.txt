@@ -29,11 +29,11 @@ webstorm
 # Music
 spotify
 soundcleod
-sip
 
-# Documents
-omnigraffle
+# Documents & Design
 typora
+omnigraffle
+sip
 
 # Fonts
 homebrew/cask-fonts/font-open-sans
