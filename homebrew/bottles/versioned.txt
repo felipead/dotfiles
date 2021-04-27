@@ -40,7 +40,8 @@ ruby
 postgresql
 redis
 
-# Platforms
+# Platforms & Tools
 minikube
 kubernetes-cli
+skaffold
 awscli
