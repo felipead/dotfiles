@@ -44,4 +44,5 @@ redis
 minikube
 kubernetes-cli
 skaffold
+grpc
 awscli
