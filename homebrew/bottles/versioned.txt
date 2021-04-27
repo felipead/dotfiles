@@ -1,25 +1,39 @@
+# Core packages
 coreutils
 awscli
-bat
-direnv
-golang
 git
-gradle
+gnupg
+
+# Utilities
+tree
+jq
+bat
+watch
+ossp-uuid
+direnv
+the_silver_searcher
 imagemagick
+vim
+
+# Java
 java
 jenv
-jq
+gradle
+
+# Go
+golang
+
+# Node.js
 node
 nvm
+
+# Python
 python3
 pyenv
 pipenv
+
+# Ruby
 rbenv
 ruby
-the_silver_searcher
-tree
-vim
-watch
-ossp-uuid
-gnupg
+
 postgresql
