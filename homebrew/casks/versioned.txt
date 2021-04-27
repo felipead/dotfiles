@@ -1,7 +1,6 @@
 # Core apps
 dropbox
 google-chrome
-firefox
 spectacle
 zoomus
 whatsapp
