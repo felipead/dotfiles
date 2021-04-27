@@ -13,6 +13,7 @@ name-mangler
 appcleaner
 cleanmymac
 authy
+coconutbattery
 
 # Programming
 sublime-text
