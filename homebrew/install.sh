@@ -9,10 +9,10 @@ read_lines_from() {
     local file=$1
     if [ -f $file ]
     then
-        while read line
+        for line in `sed -e '/^[[:space:]]*$/d' -e '/^[[:space:]]*#/d' $file`
         do
             echo $line
-        done < $file
+        done
     fi
 }
 
