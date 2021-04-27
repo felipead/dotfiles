@@ -1,33 +1,40 @@
+# Core apps
+dropbox
+google-chrome
+firefox
+spectacle
+zoomus
+whatsapp
+grammarly
+
+# Utilities
+the-unarchiver
+name-mangler
 4k-video-downloader
 appcleaner
-authy
-caption
 cleanmymac
+authy
+
+# Programming
+sublime-text
 docker
-dropbox
-firefox
-google-chrome
-grammarly
-intellij-idea-ce
 iterm2
-kaleidoscope
-name-mangler
-omnigraffle
 paw
 postman
+kaleidoscope
+intellij-idea-ce
 pycharm-ce
-sequel-pro
-sip
-soundcleod
-spectacle
+
+# Music
 spotify
-sublime-text
-the-unarchiver
-transmission
+soundcleod
+sip
+
+# Documents
+omnigraffle
 typora
-vlc
-whatsapp
-zoomus
+
+# Fonts
 homebrew/cask-fonts/font-open-sans
 homebrew/cask-fonts/font-source-code-pro
 homebrew/cask-fonts/font-source-sans-pro
