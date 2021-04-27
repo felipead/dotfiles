@@ -1,6 +1,5 @@
 # Core packages
 coreutils
-awscli
 git
 gnupg
 
@@ -18,7 +17,6 @@ vim
 # Java
 java
 jenv
-gradle
 
 # Go
 golang
@@ -39,3 +37,6 @@ ruby
 # Databases
 postgresql
 redis
+
+# Platforms
+awscli
