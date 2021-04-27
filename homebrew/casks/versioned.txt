@@ -22,6 +22,7 @@ sublime-text
 iterm2
 docker
 virtualbox
+postico
 paw
 postman
 ngrok
