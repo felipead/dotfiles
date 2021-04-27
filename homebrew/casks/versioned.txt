@@ -17,8 +17,9 @@ coconutbattery
 
 # Programming
 sublime-text
-docker
 iterm2
+docker
+virtualbox
 paw
 postman
 kaleidoscope
