@@ -42,3 +42,4 @@ homebrew/cask-fonts/font-open-sans
 homebrew/cask-fonts/font-source-code-pro
 homebrew/cask-fonts/font-source-sans-pro
 homebrew/cask-fonts/font-hack
+homebrew/cask-fonts/font-cairo
