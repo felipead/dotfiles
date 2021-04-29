@@ -2,7 +2,7 @@
 dropbox
 google-chrome
 spectacle
-zoomus
+zoom
 whatsapp
 grammarly
 viscosity
