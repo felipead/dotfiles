@@ -37,7 +37,6 @@ soundcleod
 
 # Documents & Design
 typora
-omnigraffle
 sip
 
 # Fonts
