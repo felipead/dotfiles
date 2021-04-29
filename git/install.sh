@@ -13,7 +13,7 @@ check_directory() {
 }
 
 check_environment_variables() {
-    if [ -z "${GIT_NAME}" ] || [ -z "${GIT_EMAIL}" || [ -z "${GIT_GPG_KEY}" ]
+    if [[ -z "${GIT_NAME}" || -z "${GIT_EMAIL}" || -z "${GIT_GPG_KEY}" ]]
     then
         echo 'Please set the GIT_NAME, GIT_EMAIL and GIT_GPG_KEY environment variables with the name, e-mail and GPG key to be used in your git commit messages.'
         exit -1
