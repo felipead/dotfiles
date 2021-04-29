@@ -8,11 +8,16 @@ install_oh_my_zsh() {
     rm -f ${INSTALL_SCRIPT}
 }
 
+install_powerlevel10k() {
+    echo "Installing Powerlevel10k..."
+    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+}
+
 install_settings() {
     SOURCE_DIR=$(pwd)
     TARGET_DIR=~
 
-    for ASSET in ".zshrc"
+    for ASSET in ".zshrc" ".p10k.zsh"
     do
         TARGET_FILE="${TARGET_DIR}/${ASSET}"
         SOURCE_FILE="${SOURCE_DIR}/${ASSET}"
@@ -31,5 +36,6 @@ make_zsh_default_shell() {
 }
 
 install_oh_my_zsh
+install_powerlevel10k
 install_settings
 make_zsh_default_shell

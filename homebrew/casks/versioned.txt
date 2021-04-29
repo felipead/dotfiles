@@ -46,3 +46,6 @@ homebrew/cask-fonts/font-source-code-pro
 homebrew/cask-fonts/font-source-sans-pro
 homebrew/cask-fonts/font-hack
 homebrew/cask-fonts/font-cairo
+
+# This font is required by Powerlevel10k, see: https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k
+homebrew/cask-fonts/font-meslo-lg

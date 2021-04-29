@@ -47,3 +47,6 @@ kubernetes-cli
 skaffold
 grpc
 awscli
+
+# For installing Homebrew Cask fonts
+svn
