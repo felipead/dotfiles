@@ -27,6 +27,10 @@ export ARCHFLAGS="-arch x86_64"
 export EDITOR=subl
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin"
 
+
+# Use GNU sed over POSIX sed
+export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+
 #========== GPG ==================================
 
 export GPG_TTY=$(tty)

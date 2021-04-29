@@ -3,6 +3,7 @@ coreutils
 git
 gnupg
 curl
+gsed
 
 # Utilities
 tree
