@@ -102,6 +102,17 @@ fi
 
 source $secrets_file
 
+#========== Local Configuration ==================
+
+local local_file="$HOME/.local"
+if [ ! -f $local_file ]
+then
+    touch $local_file
+    chmod 600 $local_file
+fi
+
+source $local_file
+
 #========== direnv ===============================
 
 eval "$(direnv hook zsh)"
