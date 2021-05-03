@@ -5,7 +5,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-#========== ZSH ==================================
+#=================================================
 
 export ZSH=~/.oh-my-zsh
 
@@ -25,10 +25,6 @@ HIST_STAMPS="yyyy-mm-dd"
 
 source $ZSH/oh-my-zsh.sh
 
-# Powerlevel10k theme, see: https://github.com/romkatv/powerlevel10k
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 #========== Shell ================================
 
 export LC_ALL=en_US.UTF-8
@@ -36,7 +32,6 @@ export LANG=en_US.UTF-8
 export ARCHFLAGS="-arch x86_64"
 export EDITOR=subl
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin"
-
 
 # Use GNU sed over POSIX sed
 export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
@@ -67,7 +62,7 @@ if which jenv > /dev/null; then
     eval "$(jenv init -)"
 fi
 
-#========== Python ================================
+#========== Python ===============================
 
 alias python='python3'
 alias pip='pip3'
@@ -86,6 +81,16 @@ fi
 # For building psycopg2. See → https://stackoverflow.com/a/55839410/3297193
 export LDFLAGS="-L/usr/local/opt/openssl/lib"
 
+#========== GoLang ===============================
+
+export GO111MODULE=on
+
+#========== Git ==================================
+
+alias g='git'
+
+export GIT_TERMINAL_PROMPT=1
+
 #========== Secrets and Sensitive Information ====
 
 local secrets_file="$HOME/.secrets"
@@ -97,10 +102,12 @@ fi
 
 source $secrets_file
 
-#========== Other Aliases =======================
-
-alias g='git'
-
-#========== direnv ==============================
+#========== direnv ===============================
 
 eval "$(direnv hook zsh)"
+
+#=================================================
+
+# Powerlevel10k theme, see: https://github.com/romkatv/powerlevel10k
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
