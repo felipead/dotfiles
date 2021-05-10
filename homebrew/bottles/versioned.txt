@@ -46,6 +46,7 @@ minikube
 kubernetes-cli
 skaffold
 grpc
+grpcurl
 awscli
 
 # For installing Homebrew Cask fonts
