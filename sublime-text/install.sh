@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SUBLIME_HOME="${HOME}/Library/Application Support/Sublime Text 3"
+SUBLIME_HOME="${HOME}/Library/Application Support/Sublime Text"
 
 install_settings() {
     SOURCE_DIR=$(pwd)
