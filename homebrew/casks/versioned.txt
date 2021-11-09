@@ -17,6 +17,7 @@ authy
 
 # Programming
 sublime-text
+sublime-merge
 iterm2
 docker
 paw
