@@ -104,7 +104,7 @@ source $secrets_file
 
 #========== Local Configuration ==================
 
-local local_file="$HOME/.local"
+local local_file="$HOME/.settings"
 if [ ! -f $local_file ]
 then
     touch $local_file
