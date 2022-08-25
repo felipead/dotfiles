@@ -84,6 +84,7 @@ export LDFLAGS="-L/usr/local/opt/openssl/lib"
 #========== GoLang ===============================
 
 export GO111MODULE=on
+export PATH="$HOME/go/bin:$PATH"
 
 #========== Git ==================================
 
