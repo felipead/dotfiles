@@ -69,7 +69,7 @@ alias pip='pip3'
 
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
-eval "$(pipenv --completion)"
+eval "$(_PIPENV_COMPLETE=zsh_source pipenv)"
 
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
