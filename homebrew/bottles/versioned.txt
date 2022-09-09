@@ -22,6 +22,7 @@ jenv
 
 # Go
 golang
+mockery
 
 # Node.js
 node
