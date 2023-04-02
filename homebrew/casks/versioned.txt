@@ -27,6 +27,7 @@ intellij-idea-ce
 pycharm-ce
 goland
 webstorm
+rubymine
 
 # Music
 spotify
