@@ -2,7 +2,6 @@
 dropbox
 spectacle
 zoom
-whatsapp
 grammarly
 viscosity
 
