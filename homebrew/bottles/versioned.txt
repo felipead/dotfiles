@@ -14,6 +14,7 @@ direnv
 wget
 the_silver_searcher
 imagemagick
+ffmpeg
 vim
 
 # Java
@@ -40,9 +41,6 @@ ruby
 # Databases
 postgresql@14
 redis
-
-# Audio
-ffmpeg
 
 # Platforms & Tools
 minikube
