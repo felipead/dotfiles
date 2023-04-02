@@ -86,6 +86,14 @@ export LDFLAGS="-L/usr/local/opt/openssl/lib"
 export GO111MODULE=on
 export PATH="$HOME/go/bin:$PATH"
 
+#========== Postgres =============================
+
+if [ -d "/usr/local/opt/postgresql@12" ]; then
+    export PATH="/usr/local/opt/postgresql@12/bin:$PATH"
+elif [ -d "/usr/local/opt/postgresql@14" ]; then
+    export PATH="/usr/local/opt/postgresql@14/bin:$PATH"
+fi
+
 #========== Git ==================================
 
 alias g='git'
