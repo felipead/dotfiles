@@ -38,7 +38,7 @@ rbenv
 ruby
 
 # Databases
-postgresql
+postgresql@14
 redis
 
 # Audio
