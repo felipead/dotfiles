@@ -10,7 +10,6 @@ jq
 bat
 watch
 ossp-uuid
-direnv
 wget
 the_silver_searcher
 imagemagick
@@ -23,7 +22,7 @@ jenv
 
 # Go
 golang
-mockery
+# mockery
 
 # Node.js
 node
@@ -39,15 +38,15 @@ rbenv
 ruby
 
 # Databases
-postgresql@14
-redis
+# postgresql@14
+# redis
 
 # Platforms & Tools
-minikube
-kubernetes-cli
-grpc
-grpcurl
-awscli
+# minikube
+# kubernetes-cli
+# grpc
+# grpcurl
+# awscli
 
 # GPG
 gnupg
