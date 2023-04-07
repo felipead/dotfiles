@@ -122,10 +122,6 @@ fi
 
 source $local_file
 
-#========== direnv ===============================
-
-eval "$(direnv hook zsh)"
-
 #=================================================
 
 # Powerlevel10k theme, see: https://github.com/romkatv/powerlevel10k
