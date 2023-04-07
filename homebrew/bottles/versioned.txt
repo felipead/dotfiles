@@ -49,5 +49,9 @@ grpc
 grpcurl
 awscli
 
+# GPG
+gnupg
+pinentry-mac
+
 # For installing Homebrew Cask fonts
 svn
