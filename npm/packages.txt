@@ -1,3 +1,2 @@
 tldr
-localtunnel
 speed-test
