@@ -57,9 +57,11 @@ mkdir -p "$NVM_DIR"
 
 #========== Java =================================
 
-export JENV_ROOT="/usr/local/var/jenv"
-if which jenv > /dev/null; then
-    eval "$(jenv init -)"
+if [ -d "/usr/local/var/jenv" ]; then
+    export JENV_ROOT="/usr/local/var/jenv"
+    if which jenv > /dev/null; then
+        eval "$(jenv init -)"
+    fi
 fi
 
 #========== Python ===============================
@@ -83,8 +85,10 @@ export LDFLAGS="-L/usr/local/opt/openssl/lib"
 
 #========== GoLang ===============================
 
-export GO111MODULE=on
-export PATH="$HOME/go/bin:$PATH"
+if [ -d "$HOME/go/bin" ]; then
+    export GO111MODULE=on
+    export PATH="$HOME/go/bin:$PATH"
+fi
 
 #========== Postgres =============================
 
