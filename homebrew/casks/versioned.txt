@@ -2,7 +2,7 @@
 dropbox
 spectacle
 # zoom
-viscosity
+# viscosity
 
 # Utilities
 the-unarchiver
@@ -17,7 +17,7 @@ virtualbox
 sublime-text
 iterm2
 docker
-rapidapi
+# rapidapi
 # postman
 # ngrok
 kaleidoscope
