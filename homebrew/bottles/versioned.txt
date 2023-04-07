@@ -14,14 +14,14 @@ wget
 the_silver_searcher
 imagemagick
 ffmpeg
-vim
+# vim
 
 # Java
-java
-jenv
+# java
+# jenv
 
 # Go
-golang
+# golang
 # mockery
 
 # Node.js
