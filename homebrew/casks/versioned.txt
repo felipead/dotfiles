@@ -33,6 +33,8 @@ soundcleod
 # Audio Tools
 # native-access
 # fission
+# audio-hijack
+# loopback
 
 # Video
 vlc
