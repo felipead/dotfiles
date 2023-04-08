@@ -40,6 +40,11 @@ export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 
 export GPG_TTY=$(tty)
 
+if [ ! -f ~/.gnupg/gpg-agent.conf ]; then
+    echo "pinentry-program $(which pinentry-mac)" > ~/.gnupg/gpg-agent.conf
+    killall gpg-agent
+fi
+
 #========== Ruby =================================
 
 export RBENV_ROOT="/usr/local/var/rbenv"

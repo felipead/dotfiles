@@ -7,7 +7,6 @@ spectacle
 # Utilities
 the-unarchiver
 name-mangler
-4k-video-downloader
 appcleaner
 cleanmymac
 coconutbattery
@@ -30,7 +29,13 @@ pycharm-ce
 # Music
 spotify
 soundcleod
+
+# Audio Tools
 native-access
+
+# Video
+vlc
+4k-video-downloader
 
 # Documents & Design
 typora
