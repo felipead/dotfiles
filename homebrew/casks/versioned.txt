@@ -31,7 +31,8 @@ spotify
 soundcleod
 
 # Audio Tools
-native-access
+# native-access
+# fission
 
 # Video
 vlc
