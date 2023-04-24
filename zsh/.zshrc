@@ -36,6 +36,9 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin"
 # Use GNU sed over POSIX sed
 export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 
+# Use GNU grep over POSIX grep
+export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
+
 #========== GPG ==================================
 
 export GPG_TTY=$(tty)
