@@ -1,6 +1,6 @@
 # Core apps
 dropbox
-spectacle
+rectangle
 # zoom
 # viscosity
 
