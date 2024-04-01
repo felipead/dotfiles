@@ -22,8 +22,8 @@ ffmpeg
 # jenv
 
 # Go
-# golang
-# mockery
+golang
+mockery
 
 # Node.js
 node
