@@ -22,8 +22,8 @@ docker
 kaleidoscope
 # intellij-idea-ce
 pycharm-ce
-# goland
-# webstorm
+goland
+webstorm
 # rubymine
 
 # Music
