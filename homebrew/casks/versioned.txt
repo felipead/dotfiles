@@ -17,7 +17,7 @@ sublime-text
 iterm2
 docker
 # rapidapi
-# postman
+postman
 # ngrok
 kaleidoscope
 # intellij-idea-ce
