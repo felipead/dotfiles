@@ -39,9 +39,9 @@ rbenv
 ruby
 
 # Databases
-# postgresql@15
-# elasticsearch
+postgresql@15
 # redis
+# elasticsearch
 # cassandra
 # kafka
 
