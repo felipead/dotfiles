@@ -39,7 +39,7 @@ rbenv
 ruby
 
 # Databases
-# postgresql@14
+# postgresql@15
 # redis
 
 # Platforms & Tools
