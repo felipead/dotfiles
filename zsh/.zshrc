@@ -96,7 +96,7 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 
 # For building psycopg2. See → https://stackoverflow.com/a/55839410/3297193
-export LDFLAGS="-L/usr/local/opt/openssl/lib"
+# export LDFLAGS="-L/usr/local/opt/openssl/lib"
 
 #========== GoLang ===============================
 
