@@ -15,7 +15,7 @@ virtualbox
 # Programming
 sublime-text
 iterm2
-docker
+# docker
 # rapidapi
 postman
 # ngrok
