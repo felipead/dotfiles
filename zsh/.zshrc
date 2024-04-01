@@ -50,12 +50,14 @@ fi
 
 #========== Ruby =================================
 
-export RBENV_ROOT="/usr/local/var/rbenv"
-if which rbenv > /dev/null; then
-    eval "$(rbenv init -)"
-fi
+if [ -d "/usr/local/var/rbenv" ]; then
+    export RBENV_ROOT="/usr/local/var/rbenv"
+    if which rbenv > /dev/null; then
+        eval "$(rbenv init -)"
+    fi
 
-export PATH="/usr/local/var/rbenv/shims:$PATH"
+    export PATH="/usr/local/var/rbenv/shims:$PATH"
+fi
 
 if [ -d "/usr/local/opt/ruby/bin" ]; then
   export PATH=/usr/local/opt/ruby/bin:$PATH
