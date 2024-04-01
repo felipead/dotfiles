@@ -18,7 +18,7 @@ ffmpeg
 # vim
 
 # Java
-# java
+# openjdk
 # jenv
 
 # Go
