@@ -43,6 +43,7 @@ ruby
 # redis
 
 # Platforms & Tools
+colima
 # minikube
 # kubernetes-cli
 # grpc
