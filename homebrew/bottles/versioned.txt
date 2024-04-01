@@ -43,6 +43,7 @@ ruby
 # elasticsearch
 # redis
 # cassandra
+# kafka
 
 # Platforms & Tools
 docker
