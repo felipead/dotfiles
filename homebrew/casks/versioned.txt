@@ -1,7 +1,7 @@
 # Core apps
 dropbox
 rectangle
-# zoom
+zoom
 # viscosity
 
 # Utilities
