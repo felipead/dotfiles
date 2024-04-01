@@ -35,8 +35,8 @@ pyenv
 pipenv
 
 # Ruby
-rbenv
-ruby
+# rbenv
+# ruby
 
 # Databases
 postgresql@15
