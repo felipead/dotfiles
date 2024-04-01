@@ -107,10 +107,8 @@ fi
 
 #========== Postgres =============================
 
-if [ -d "/usr/local/opt/postgresql@12" ]; then
-    export PATH="/usr/local/opt/postgresql@12/bin:$PATH"
-elif [ -d "/usr/local/opt/postgresql@14" ]; then
-    export PATH="/usr/local/opt/postgresql@14/bin:$PATH"
+if [ -d "/usr/local/opt/postgresql@15" ]; then
+    export PATH="/usr/local/opt/postgresql@15/bin:$PATH"
 fi
 
 #========== Git ==================================
