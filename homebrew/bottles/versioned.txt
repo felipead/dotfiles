@@ -11,6 +11,7 @@ jq
 bat
 watch
 ossp-uuid
+pwgen
 wget
 the_silver_searcher
 imagemagick
