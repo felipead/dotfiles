@@ -25,6 +25,7 @@ ffmpeg
 # Go
 golang
 mockery
+golangci-lint
 
 # Node.js
 node
