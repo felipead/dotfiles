@@ -41,7 +41,7 @@ pipenv
 # ruby
 
 # Databases
-postgresql@15
+# postgresql@15
 # redis
 # elasticsearch
 # cassandra
