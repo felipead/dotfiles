@@ -72,12 +72,12 @@ mkdir -p "$NVM_DIR"
 
 #========== Java =================================
 
-if [ -d "/usr/local/var/jenv" ]; then
-    export JENV_ROOT="/usr/local/var/jenv"
-    if which jenv > /dev/null; then
-        eval "$(jenv init -)"
-    fi
-fi
+# if [ -d "/usr/local/var/jenv" ]; then
+#     export JENV_ROOT="/usr/local/var/jenv"
+#     if which jenv > /dev/null; then
+#         eval "$(jenv init -)"
+#     fi
+# fi
 
 #========== Python ===============================
 
