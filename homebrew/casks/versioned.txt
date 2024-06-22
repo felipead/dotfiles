@@ -2,6 +2,7 @@
 dropbox
 rectangle
 zoom
+1password
 
 # Utilities
 the-unarchiver
