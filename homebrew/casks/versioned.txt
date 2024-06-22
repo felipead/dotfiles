@@ -8,6 +8,7 @@ firefox
 # Device drivers
 logi-options-plus
 logitune
+karabiner-elements
 
 # Utilities
 the-unarchiver
