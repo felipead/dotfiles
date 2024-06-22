@@ -16,6 +16,7 @@ wget
 the_silver_searcher
 imagemagick
 ffmpeg
+dotenvx
 # vim
 
 # Java
