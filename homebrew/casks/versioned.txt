@@ -5,6 +5,10 @@ zoom
 1password
 firefox
 
+# Device drivers
+logi-options-plus
+logitune
+
 # Utilities
 the-unarchiver
 name-mangler
