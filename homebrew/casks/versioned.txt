@@ -10,6 +10,7 @@ name-mangler
 appcleaner
 cleanmymac
 coconutbattery
+# cleanshot
 # virtualbox
 
 # Programming
