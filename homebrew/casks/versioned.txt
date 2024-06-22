@@ -2,7 +2,6 @@
 dropbox
 rectangle
 zoom
-# viscosity
 
 # Utilities
 the-unarchiver
@@ -10,21 +9,22 @@ name-mangler
 appcleaner
 cleanmymac
 coconutbattery
-virtualbox
+# virtualbox
 
 # Programming
 sublime-text
 iterm2
-# docker
-# rapidapi
-postman
-# ngrok
 kaleidoscope
-# intellij-idea-ce
 pycharm-ce
 goland
 webstorm
+# postman
+# docker
+# rapidapi
+# ngrok
+# intellij-idea-ce
 # rubymine
+# viscosity
 
 # Music
 spotify
