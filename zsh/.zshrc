@@ -48,36 +48,11 @@ if [ ! -f ~/.gnupg/gpg-agent.conf ]; then
     killall gpg-agent
 fi
 
-#========== Ruby =================================
-
-# if [ -d "/usr/local/opt/ruby/bin" ]; then
-#   export PATH=/usr/local/opt/ruby/bin:$PATH
-#   export PATH=`gem environment gemdir`/bin:$PATH
-# fi
-
-# if [ -d "/usr/local/var/rbenv" ]; then
-#     export RBENV_ROOT="/usr/local/var/rbenv"
-#     if which rbenv > /dev/null; then
-#         eval "$(rbenv init - zsh)"
-#     fi
-
-#     export PATH="/usr/local/var/rbenv/shims:$PATH"
-# fi
-
 #========== Node.js ==============================
 
 export NVM_DIR="$HOME/.nvm"
 mkdir -p "$NVM_DIR"
 . "/usr/local/opt/nvm/nvm.sh"
-
-#========== Java =================================
-
-# if [ -d "/usr/local/var/jenv" ]; then
-#     export JENV_ROOT="/usr/local/var/jenv"
-#     if which jenv > /dev/null; then
-#         eval "$(jenv init -)"
-#     fi
-# fi
 
 #========== Python ===============================
 
@@ -105,6 +80,31 @@ if [ -d "$HOME/go/bin" ]; then
     export PATH="$HOME/go/bin:$PATH"
 fi
 
+#========== Ruby =================================
+
+# if [ -d "/usr/local/opt/ruby/bin" ]; then
+#   export PATH=/usr/local/opt/ruby/bin:$PATH
+#   export PATH=`gem environment gemdir`/bin:$PATH
+# fi
+
+# if [ -d "/usr/local/var/rbenv" ]; then
+#     export RBENV_ROOT="/usr/local/var/rbenv"
+#     if which rbenv > /dev/null; then
+#         eval "$(rbenv init - zsh)"
+#     fi
+
+#     export PATH="/usr/local/var/rbenv/shims:$PATH"
+# fi
+
+#========== Java =================================
+
+# if [ -d "/usr/local/var/jenv" ]; then
+#     export JENV_ROOT="/usr/local/var/jenv"
+#     if which jenv > /dev/null; then
+#         eval "$(jenv init -)"
+#     fi
+# fi
+
 #========== Postgres =============================
 
 # if [ -d "/usr/local/opt/postgresql@15" ]; then
@@ -117,7 +117,7 @@ alias g='git'
 
 export GIT_TERMINAL_PROMPT=1
 
-#========== Secrets and Sensitive Information ====
+#========== Secrets ==============================
 
 local secrets_file="$HOME/.secrets"
 if [ ! -f $secrets_file ]
