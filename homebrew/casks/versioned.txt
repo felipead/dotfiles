@@ -3,6 +3,7 @@ dropbox
 rectangle
 zoom
 1password
+firefox
 
 # Utilities
 the-unarchiver
