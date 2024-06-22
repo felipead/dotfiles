@@ -60,6 +60,3 @@ colima
 # GPG
 gnupg
 pinentry-mac
-
-# For installing Homebrew Cask fonts
-svn
