@@ -4,6 +4,7 @@ coreutils
 # Utilities
 imagemagick
 ffmpeg
+speedtest-cli
 
 # Programming
 git
