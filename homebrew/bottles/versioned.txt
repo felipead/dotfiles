@@ -1,11 +1,15 @@
 # Core packages
 coreutils
+
+# Utilities
+imagemagick
+ffmpeg
+
+# Programming
 git
 curl
 gsed
 grep
-
-# Utilities
 tree
 jq
 bat
@@ -14,14 +18,8 @@ ossp-uuid
 pwgen
 wget
 the_silver_searcher
-imagemagick
-ffmpeg
 dotenvx
 # vim
-
-# Java
-# openjdk
-# jenv
 
 # Go
 golang
@@ -40,6 +38,10 @@ pipenv
 # Ruby
 # rbenv
 # ruby
+
+# Java
+# openjdk
+# jenv
 
 # Databases
 # postgresql@15
