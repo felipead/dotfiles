@@ -41,6 +41,7 @@ kafka
 
 # Containers
 docker
+docker-compose
 colima
 
 # Platforms & Tools
