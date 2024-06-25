@@ -75,10 +75,10 @@ fi
 
 #========== GoLang ===============================
 
-if [ -d "$HOME/go/bin" ]; then
-    export GO111MODULE=on
-    export PATH="$HOME/go/bin:$PATH"
-fi
+# if [ -d "$HOME/go/bin" ]; then
+#     export GO111MODULE=on
+#     export PATH="$HOME/go/bin:$PATH"
+# fi
 
 #========== Java =================================
 
