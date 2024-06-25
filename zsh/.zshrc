@@ -80,22 +80,6 @@ if [ -d "$HOME/go/bin" ]; then
     export PATH="$HOME/go/bin:$PATH"
 fi
 
-#========== Ruby =================================
-
-# if [ -d "/usr/local/opt/ruby/bin" ]; then
-#   export PATH=/usr/local/opt/ruby/bin:$PATH
-#   export PATH=`gem environment gemdir`/bin:$PATH
-# fi
-
-# if [ -d "/usr/local/var/rbenv" ]; then
-#     export RBENV_ROOT="/usr/local/var/rbenv"
-#     if which rbenv > /dev/null; then
-#         eval "$(rbenv init - zsh)"
-#     fi
-
-#     export PATH="/usr/local/var/rbenv/shims:$PATH"
-# fi
-
 #========== Java =================================
 
 # if [ -d "/usr/local/var/jenv" ]; then
