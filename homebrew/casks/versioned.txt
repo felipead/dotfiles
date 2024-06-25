@@ -1,19 +1,19 @@
-# Core apps
+# --- Core apps ---
 rectangle
 zoom
 1password
 firefox
 
-# Device drivers
+# --- Device drivers ---
 karabiner-elements
 logi-options-plus
 logitune
 
-# Programming
+# --- Programming ---
 sublime-text
 iterm2
 
-# Fonts
+# --- Fonts ---
 font-open-sans
 font-source-code-pro
 font-source-sans-pro

@@ -1,7 +1,7 @@
-# Core packages
+# --- Core packages ---
 coreutils
 
-# Programming
+# --- Programming ---
 git
 curl
 gsed

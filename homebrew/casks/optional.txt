@@ -1,43 +1,43 @@
-# Core apps
-dropbox
+# --- Core apps ---
+# dropbox
 
-# Utilities
-the-unarchiver
-name-mangler
-appcleaner
-cleanmymac
-coconutbattery
-cleanshot
-virtualbox
-viscosity
+# --- Utilities ---
+# the-unarchiver
+# name-mangler
+# appcleaner
+# cleanmymac
+# coconutbattery
+# cleanshot
+# virtualbox
+# viscosity
 
-# Programming
-kaleidoscope
-pycharm-ce
-goland
-webstorm
-rostover
-intellij-idea-ce
-docker
-postman
-insomnia
-rapidapi
-ngrok
+# --- Programming ---
+# kaleidoscope
+# pycharm-ce
+# goland
+# webstorm
+# rostover
+# intellij-idea-ce
+# docker
+# postman
+# insomnia
+# rapidapi
+# ngrok
 
-# Music
-spotify
-soundcleod
+# --- Music ---
+# spotify
+# soundcleod
 
-# Audio Tools
-native-access
-fission
-audio-hijack
-loopback
+# --- Audio Tools ---
+# native-access
+# fission
+# audio-hijack
+# loopback
 
-# Video
-vlc
-4k-video-downloader
+# --- Video ---
+# vlc
+# 4k-video-downloader
 
-# Documents & Design
-typora
-sip
+# --- Documents & Design ---
+# typora
+# sip

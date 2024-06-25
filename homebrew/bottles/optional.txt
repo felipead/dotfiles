@@ -1,52 +1,52 @@
-# Programming
-pwgen
-wget
-dotenvx
-vim
-bat
+# --- Programming ---
+# pwgen
+# wget
+# dotenvx
+# vim
+# bat
 
-# GPG
-gnupg
-pinentry-mac
+# --- GPG ---
+# gnupg
+# pinentry-mac
 
-# Utilities
-imagemagick
-ffmpeg
-speedtest-cli
+# --- Utilities ---
+# imagemagick
+# ffmpeg
+# speedtest-cli
 
-# Go
-golang
-mockery
-golangci-lint
+# --- Go/Golang ---
+# golang
+# mockery
+# golangci-lint
 
-# Node.js
-node
-nvm
+# --- Node.js ---
+# node
+# nvm
 
-# Python
-python3
-pyenv
-pipenv
+# --- Python ---
+# python3
+# pyenv
+# pipenv
 
-# Java
-openjdk
-jenv
+# --- Java ---
+# openjdk
+# jenv
 
-# Databases
-postgresql@15
-redis
-elasticsearch
-cassandra
-kafka
+# --- Databases ---
+# postgresql@15
+# redis
+# elasticsearch
+# cassandra
+# kafka
 
-# Containers
-docker
-docker-compose
-colima
+# --- Containers ---
+# docker
+# docker-compose
+# colima
 
-# Platforms & Tools
-minikube
-kubernetes-cli
-grpc
-grpcurl
-awscli
+# --- Platforms & Tools ---
+# minikube
+# kubernetes-cli
+# grpc
+# grpcurl
+# awscli
