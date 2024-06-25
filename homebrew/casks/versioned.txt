@@ -1,57 +1,17 @@
 # Core apps
-dropbox
 rectangle
 zoom
 1password
 firefox
 
 # Device drivers
+karabiner-elements
 logi-options-plus
 logitune
-karabiner-elements
-
-# Utilities
-the-unarchiver
-name-mangler
-appcleaner
-cleanmymac
-coconutbattery
-# cleanshot
-# virtualbox
 
 # Programming
 sublime-text
 iterm2
-kaleidoscope
-pycharm-ce
-goland
-webstorm
-# postman
-# insomnia
-# docker
-# rapidapi
-# ngrok
-# intellij-idea-ce
-# rubymine
-# viscosity
-
-# Music
-spotify
-soundcleod
-
-# Audio Tools
-# native-access
-# fission
-# audio-hijack
-# loopback
-
-# Video
-vlc
-4k-video-downloader
-
-# Documents & Design
-typora
-# sip
 
 # Fonts
 font-open-sans

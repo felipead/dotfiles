@@ -1,0 +1,44 @@
+# Core apps
+dropbox
+
+# Utilities
+the-unarchiver
+name-mangler
+appcleaner
+cleanmymac
+coconutbattery
+cleanshot
+virtualbox
+
+# Programming
+kaleidoscope
+pycharm-ce
+goland
+webstorm
+rostover
+postman
+insomnia
+docker
+rapidapi
+ngrok
+intellij-idea-ce
+rubymine
+viscosity
+
+# Music
+spotify
+soundcleod
+
+# Audio Tools
+native-access
+fission
+audio-hijack
+loopback
+
+# Video
+vlc
+4k-video-downloader
+
+# Documents & Design
+typora
+sip
