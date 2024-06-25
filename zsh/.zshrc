@@ -101,17 +101,6 @@ alias g='git'
 
 export GIT_TERMINAL_PROMPT=1
 
-#========== Secrets ==============================
-
-local secrets_file="$HOME/.secrets"
-if [ ! -f $secrets_file ]
-then
-    touch $secrets_file
-    chmod 600 $secrets_file
-fi
-
-source $secrets_file
-
 #========== Local Configuration ==================
 
 local local_file="$HOME/.settings"
