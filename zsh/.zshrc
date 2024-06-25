@@ -33,88 +33,21 @@ export ARCHFLAGS="-arch x86_64"
 export EDITOR=subl
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin/:/usr/sbin:/sbin"
 
-# Use GNU sed over POSIX sed
-export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
-
-# Use GNU grep over POSIX grep
-export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
-
-#========== GPG ==================================
-
-export GPG_TTY=$(tty)
-
-if [ ! -f ~/.gnupg/gpg-agent.conf ]; then
-    echo "pinentry-program $(which pinentry-mac)" > ~/.gnupg/gpg-agent.conf
-    killall gpg-agent
-fi
-
-#========== Node.js ==============================
-
-export NVM_DIR="$HOME/.nvm"
-mkdir -p "$NVM_DIR"
-. "/usr/local/opt/nvm/nvm.sh"
-
-#========== Python ===============================
-
-# alias python='python3'
-# alias pip='pip3'
-
-# export PATH="/usr/local/opt/python/libexec/bin:$PATH"
-
-# eval "$(_PIPENV_COMPLETE=zsh_source pipenv)"
-
-# export PYENV_ROOT="$HOME/.pyenv"
-# export PATH="$PYENV_ROOT/bin:$PATH"
-
-# if command -v pyenv 1>/dev/null 2>&1; then
-#   eval "$(pyenv init -)"
-# fi
-
-# For building psycopg2. See → https://stackoverflow.com/a/55839410/3297193
-# export LDFLAGS="-L/usr/local/opt/openssl/lib"
-
-#========== GoLang ===============================
-
-# if [ -d "$HOME/go/bin" ]; then
-#     export GO111MODULE=on
-#     export PATH="$HOME/go/bin:$PATH"
-# fi
-
-#========== Java =================================
-
-# if [ -d "/usr/local/var/jenv" ]; then
-#     export JENV_ROOT="/usr/local/var/jenv"
-#     if which jenv > /dev/null; then
-#         eval "$(jenv init -)"
-#     fi
-# fi
-
-#========== Postgres =============================
-
-# if [ -d "/usr/local/opt/postgresql@15" ]; then
-#     export PATH="/usr/local/opt/postgresql@15/bin:$PATH"
-# fi
-
 #========== Git ==================================
 
 alias g='git'
 
 export GIT_TERMINAL_PROMPT=1
 
-#========== Local Settings / Environment ==================
+#========== Local Settings ==================
 
 #
-# WARNING: you should not store secrets or sensitive information in this
-# `.zshrc` file or any plaintext config files.
+# See: .local.zsh.template
 #
-# But just in case you absolutely need to, even in a temporary capacity,
-# it is better to use a separate local file than this `.zshrc` file.
-#
-local local_file="$HOME/.settings"
+local local_file="$HOME/.local.zsh"
 if [ ! -f $local_file ]
 then
     touch $local_file
-    chmod 600 $local_file
 fi
 
 source $local_file
