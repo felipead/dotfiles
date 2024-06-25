@@ -101,8 +101,15 @@ alias g='git'
 
 export GIT_TERMINAL_PROMPT=1
 
-#========== Local Configuration ==================
+#========== Local Settings / Environment ==================
 
+#
+# WARNING: you should not store secrets or sensitive information in this
+# `.zshrc` file or any plaintext config files.
+#
+# But just in case you absolutely need to, even in a temporary capacity,
+# it is better to use a separate local file than this `.zshrc` file.
+#
 local local_file="$HOME/.settings"
 if [ ! -f $local_file ]
 then
