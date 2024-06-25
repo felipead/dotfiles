@@ -80,6 +80,15 @@ if [ -d "$HOME/go/bin" ]; then
     export PATH="$HOME/go/bin:$PATH"
 fi
 
+#========== Java =================================
+
+# if [ -d "/usr/local/var/jenv" ]; then
+#     export JENV_ROOT="/usr/local/var/jenv"
+#     if which jenv > /dev/null; then
+#         eval "$(jenv init -)"
+#     fi
+# fi
+
 #========== Postgres =============================
 
 # if [ -d "/usr/local/opt/postgresql@15" ]; then
