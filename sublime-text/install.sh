@@ -6,7 +6,7 @@ install_settings() {
     SOURCE_DIR=$(pwd)
     TARGET_DIR="${SUBLIME_HOME}/Packages/User"
 
-    for ASSET in "Preferences" "Python" "Ruby" "JavaScript" "Package Control"
+    for ASSET in "Preferences" "Python" "JavaScript" "Package Control"
     do
         SOURCE_FILE=${SOURCE_DIR}/${ASSET}.sublime-settings
         TARGET_FILE=${TARGET_DIR}/${ASSET}.sublime-settings

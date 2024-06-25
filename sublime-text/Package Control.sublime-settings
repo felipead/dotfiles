@@ -8,13 +8,10 @@
 		"A File Icon",
 		"Case Conversion",
 		"Dockerfile Syntax Highlighting",
-		"Golang Build",
 		"Indent XML",
 		"MarkdownPreview",
 		"Package Control",
 		"Protobuf Syntax Hightlighting",
-		"Sass",
-		"Terraform",
 		"TypeScript"
 	],
 }
