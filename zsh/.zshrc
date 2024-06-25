@@ -56,19 +56,19 @@ mkdir -p "$NVM_DIR"
 
 #========== Python ===============================
 
-alias python='python3'
-alias pip='pip3'
+# alias python='python3'
+# alias pip='pip3'
 
-export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+# export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
-eval "$(_PIPENV_COMPLETE=zsh_source pipenv)"
+# eval "$(_PIPENV_COMPLETE=zsh_source pipenv)"
 
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
+# export PYENV_ROOT="$HOME/.pyenv"
+# export PATH="$PYENV_ROOT/bin:$PATH"
 
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
+# if command -v pyenv 1>/dev/null 2>&1; then
+#   eval "$(pyenv init -)"
+# fi
 
 # For building psycopg2. See → https://stackoverflow.com/a/55839410/3297193
 # export LDFLAGS="-L/usr/local/opt/openssl/lib"
