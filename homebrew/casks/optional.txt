@@ -9,6 +9,7 @@ cleanmymac
 coconutbattery
 cleanshot
 virtualbox
+viscosity
 
 # Programming
 kaleidoscope
@@ -16,14 +17,12 @@ pycharm-ce
 goland
 webstorm
 rostover
+intellij-idea-ce
+docker
 postman
 insomnia
-docker
 rapidapi
 ngrok
-intellij-idea-ce
-rubymine
-viscosity
 
 # Music
 spotify
