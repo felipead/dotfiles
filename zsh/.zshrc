@@ -52,6 +52,25 @@ fi
 
 source $local_file
 
+#========== Local Environment ==================
+
+#
+# WARNING: you should not store secrets or sensitive information in this
+# `.zshrc` file or any plaintext files.
+#
+# But just in case you absolutely need to, even in a temporary capacity,
+# it is better to use a separate env file than this `.zshrc` or any versioned
+# files.
+#
+local env_file="$HOME/.local-env"
+if [ ! -f $env_file ]
+then
+    touch $env_file
+fi
+chmod 600 $env_file
+
+source $env_file
+
 #=================================================
 
 # Powerlevel10k theme, see: https://github.com/romkatv/powerlevel10k
