@@ -1,6 +1,4 @@
 # --- Fonts ---
-font-open-sans
 font-source-code-pro
 font-source-sans-pro
 font-hack
-font-cairo
