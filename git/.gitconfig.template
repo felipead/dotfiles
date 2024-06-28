@@ -16,14 +16,15 @@
     ui = always
 
 [alias]
-    co = checkout
-    ci = commit
+    ap = add -p
+    co = commit
     cm = commit -m
+    ca = commit --amend
+    df = diff
+    lg = log --oneline
     pr = pull -r
     ps = push
     st = status -s
-    df = diff
-    lg = log --oneline
 
 [url "ssh://git@github.com/"]
     insteadOf = https://github.com/
