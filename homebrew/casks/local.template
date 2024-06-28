@@ -1,5 +1,14 @@
 # --- Core apps ---
+# rectangle
+# zoom
+# 1password
+# firefox
 # dropbox
+
+# --- Device drivers ---
+# karabiner-elements
+# logi-options-plus
+# logitune
 
 # --- Utilities ---
 # the-unarchiver
@@ -12,6 +21,8 @@
 # viscosity
 
 # --- Programming ---
+# sublime-text
+# iterm2
 # kaleidoscope
 # pycharm-ce
 # goland

@@ -1,18 +1,3 @@
-# --- Core apps ---
-rectangle
-zoom
-1password
-firefox
-
-# --- Device drivers ---
-karabiner-elements
-logi-options-plus
-logitune
-
-# --- Programming ---
-sublime-text
-iterm2
-
 # --- Fonts ---
 font-open-sans
 font-source-code-pro
@@ -20,5 +5,5 @@ font-source-sans-pro
 font-hack
 font-cairo
 
-# This font is required by Powerlevel10k, see: https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k
+# Required by Powerlevel10k → https://github.com/romkatv/powerlevel10k
 font-meslo-lg
