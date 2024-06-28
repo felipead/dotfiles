@@ -57,7 +57,7 @@ $ gpg --list-secret-keys --keyid-format=long
 /Users/hubot/.gnupg/secring.gpg
 ------------------------------------
 sec   4096R/3AA5C34371567BD2 2016-03-10 [expires: 2017-03-10]
-uid                          Hubot <hubot@example.com>
+uid                          Felipe Dornelas <foo@example.com>
 ssb   4096R/4BB6D45482678BE3 2016-03-10
 ```
 
@@ -75,4 +75,12 @@ After you've run a signed commit, you can verify it signed with:
 git log --show-signature -1
 ```
 
-Also, please see [here](https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits) for GitHub integration.
+You should see something like:
+
+```
+gpg: Signature made Mon Jan 30 03:33:33 2023 -03
+gpg:                using RSA key ************************3AA5C34371567BD2
+gpg: Good signature from "Felipe Dornelas <foo@example.com>" [ultimate]
+```
+
+Lastly, please see [here](https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits) for GitHub integration.
