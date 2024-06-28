@@ -1,8 +1,20 @@
 # Developer Environment as Code
 
+_Author:_ Felipe Dornelas
+
+---
+
 Builds and installs my development environment, synchronizing settings across different machines. The scripts are flexible enough to allow local customization, as required (eg: personal vs. work computers).
 
-— _Author:_ Felipe Dornelas
+## Index
+
+1. [Homebrew](homebrew/)
+1. [Zsh](zsh/)
+1. [SSH](ssh/)
+1. [GPG](gpg/)
+1. [Git](git/)
+1. [Sublime Text](sublime-text/)
+1. [Karabiner-Elements](karabiner/)
 
 ## Disclaimer
 
