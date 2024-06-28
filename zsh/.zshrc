@@ -33,13 +33,17 @@ export ARCHFLAGS="-arch x86_64"
 export EDITOR=subl
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin/:/usr/sbin:/sbin"
 
+#========== Homebrew =============================
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 #========== Git ==================================
 
 alias g='git'
 
 export GIT_TERMINAL_PROMPT=1
 
-#========== Local Settings ==================
+#========== Local Settings =======================
 
 #
 # See: .local.zsh.template
@@ -52,7 +56,7 @@ fi
 
 source $local_file
 
-#========== Local Environment ==================
+#========== Local Environment ====================
 
 #
 # WARNING: you should not store secrets or sensitive information in this
