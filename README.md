@@ -2,7 +2,7 @@
 
 Builds and installs my development environment, synchronizing settings across different machines. The scripts are flexible enough to allow local customization, as required (eg: personal vs. work computers).
 
--- Author: Felipe Dornelas
+— _Author:_ Felipe Dornelas
 
 ## Disclaimer
 
