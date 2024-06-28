@@ -1,4 +1,13 @@
-Host *
-  UseKeychain no
-  AddKeysToAgent yes
-  IdentityFile ~/.ssh/id_rsa
+# Include ~/.colima/ssh_config
+
+# Host github.com
+#   HostName github.com
+#   UseKeychain no
+#   AddKeysToAgent yes
+#   IdentityFile ~/.ssh/id_github
+
+# Host gitlab.com
+#   HostName gitlab.com
+#   UseKeychain no
+#   AddKeysToAgent yes
+#   IdentityFile ~/.ssh/id_gitlab
