@@ -39,7 +39,7 @@ copy_config_template_to_target() {
 }
 
 add_ssh_identity() {
-    ssh-add -K ${PRIVATE_KEY}
+    ssh-add ${PRIVATE_KEY}
 }
 
 check_directory

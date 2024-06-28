@@ -1,4 +1,4 @@
 Host *
-  UseKeychain yes
+  UseKeychain no
   AddKeysToAgent yes
   IdentityFile ~/.ssh/id_rsa
