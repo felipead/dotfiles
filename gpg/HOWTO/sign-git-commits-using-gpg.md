@@ -1,7 +1,5 @@
 # How to sign Git commits using GPG
 
-From [here](https://stackoverflow.com/a/40066889).
-
 ## Requirements
 
 This tutorial assumes you are on macOS using [Homebrew](https://brew.sh).
@@ -81,3 +79,13 @@ Lastly, register your key:
 ```sh
 git config --global user.signingkey YOUR_GPG_SIGNING_KEY
 ```
+
+## Verifying Git commits are signed
+
+After you've run a signed commit, you can verify it signed with:
+
+```sh
+git log --show-signature -1
+```
+
+Also, please see [here](https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits) for GitHub integration.
