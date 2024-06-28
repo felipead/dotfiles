@@ -1,7 +1,7 @@
 Settings for SSH
 ================
 
-First, generate a new SSH key or restore it from backup.
+First, [generate a new SSH key](HOWTO/generate-new-ssh-key.md) or restore it from backup.
 
 Then, copy `config.template` to `config.local`, enabling the desired entries.
 
