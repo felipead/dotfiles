@@ -11,3 +11,7 @@ jq
 watch
 ossp-uuid
 the_silver_searcher
+
+# --- GPG ---
+gnupg
+pinentry-mac
