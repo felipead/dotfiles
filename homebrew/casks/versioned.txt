@@ -4,6 +4,3 @@ font-source-code-pro
 font-source-sans-pro
 font-hack
 font-cairo
-
-# Required by Powerlevel10k → https://github.com/romkatv/powerlevel10k
-font-meslo-lg
