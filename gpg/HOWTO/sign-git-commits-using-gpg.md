@@ -14,11 +14,21 @@ Please install the following [bottles](https://github.com/felipead/dotfiles/blob
 
 ## Configuration
 
+First ensure `pinentry-mac` is correctly installed and added to your `$PATH`:
 
-Link `pinentry-mac` to `gpg-agent.conf`:
+```sh
+which pinentry-mac
+```
+
+Then, link `pinentry-mac` to `gpg-agent.conf`:
 
 ```sh
 echo "pinentry-program $(which pinentry-mac)" >> ~/.gnupg/gpg-agent.conf
+```
+
+Restart the `gpg-agent` for changes to make effect:
+
+```sh
 killall gpg-agent
 ```
 

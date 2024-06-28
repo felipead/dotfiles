@@ -5,7 +5,7 @@
 This will generate a new GPG key pair and register it into your system ([source](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-gpg-key)):
 
 ```sh
-$ gpg --full-generate-key
+gpg --full-generate-key
 ```
 
 ## List all secret keys
@@ -13,7 +13,7 @@ $ gpg --full-generate-key
 In order to list all installed secret keys
 
 ```sh
-$ gpg --list-secret-keys --keyid-format LONG
+gpg --list-secret-keys --keyid-format LONG
 ```
 
 ## Export the keys
@@ -23,13 +23,13 @@ You will need to [export your keys](https://unix.stackexchange.com/questions/481
 Exporting the public key:
 
 ```sh
-$ gpg --output public.pgp --armor --export foo@example.com
+gpg --output public.pgp --armor --export foo@example.com
 ```
 
 Exporting the private key:
 
 ```sh
-$ gpg --output private.pgp --armor --export-secret-key foo@example.com
+gpg --output private.pgp --armor --export-secret-key foo@example.com
 ```
 
 ## Importing the keys
@@ -37,6 +37,6 @@ $ gpg --output private.pgp --armor --export-secret-key foo@example.com
 Importing the keys is useful if you are restoring them from a backup, for example:
 
 ```sh
-$ gpg --import private.pgp
-$ gpg --import public.gpg
+gpg --import private.pgp
+gpg --import public.gpg
 ```
