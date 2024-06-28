@@ -6,7 +6,7 @@ From [here](https://stackoverflow.com/a/40066889).
 
 This tutorial assumes you are on macOS using [Homebrew](https://brew.sh).
 
-Please install the following [bottles](https://github.com/felipead/dotfiles/blob/master/homebrew/bottles/local.template):
+Please install the following Homebrew [bottles](https://github.com/felipead/dotfiles/blob/master/homebrew/bottles/local.template):
 
 - `gnupg`
 - `pinentry-mac`
