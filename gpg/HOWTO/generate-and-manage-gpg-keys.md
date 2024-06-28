@@ -1,5 +1,9 @@
 # How to generate and manage GPG keys
 
+## Requirements
+
+Please [install GnuPG and pinentry](HOWTO/install-gnupg-and-pinentry-on-mac.md).
+
 ## Generate a new GPG key pair
 
 This will generate a new GPG key pair and register it into your system ([source](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-gpg-key)):
@@ -38,5 +42,5 @@ Importing the keys is useful if you are restoring them from a backup, for exampl
 
 ```sh
 gpg --import private.pgp
-gpg --import public.gpg
+gpg --import public.pgp
 ```

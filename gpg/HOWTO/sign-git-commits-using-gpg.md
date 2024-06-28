@@ -2,33 +2,9 @@
 
 ## Requirements
 
-This tutorial assumes you are on macOS using [Homebrew](https://brew.sh).
+Please [install GnuPG and pinentry](HOWTO/install-gnupg-and-pinentry-on-mac.md).
 
-Please install the following Homebrew [bottles](https://github.com/felipead/dotfiles/blob/master/homebrew/bottles/local.template):
-
-- `gnupg`
-- `pinentry-mac`
-
-
-## Configuration
-
-First ensure `pinentry-mac` is correctly installed and added to your `$PATH`:
-
-```sh
-which pinentry-mac
-```
-
-Then, link `pinentry-mac` to `gpg-agent.conf`:
-
-```sh
-echo "pinentry-program $(which pinentry-mac)" >> ~/.gnupg/gpg-agent.conf
-```
-
-Restart the `gpg-agent` for changes to make effect:
-
-```sh
-killall gpg-agent
-```
+Then, [generate a new GPG key](HOWTO/generate-and-manage-gpg-keys.md).
 
 ## Testing
 
@@ -65,7 +41,7 @@ d3euMdHF6fLWAQ3ypcM1IAZaEmDL12LrC071rpxIjB8yESJTzoU=
 
 ## Git integration
 
-If you are using [my Git config](https://github.com/felipead/dotfiles/blob/master/git), this will be taken care of. You can skip the instructions below.
+If you are using [my Git config](../git), this will be taken care of. You can skip the instructions below.
 
 In order to explicitly enable GPG signining with Git:
 
@@ -74,10 +50,21 @@ git config --global gpg.program gpg
 git config --global commit.gpgsign true
 ```
 
-Lastly, register your key:
+From the list of GPG keys, copy the long form of the GPG key ID you'd like to use. In this example, the GPG key ID is `3AA5C34371567BD2`:
 
 ```sh
-git config --global user.signingkey YOUR_GPG_SIGNING_KEY
+$ gpg --list-secret-keys --keyid-format=long
+/Users/hubot/.gnupg/secring.gpg
+------------------------------------
+sec   4096R/3AA5C34371567BD2 2016-03-10 [expires: 2017-03-10]
+uid                          Hubot <hubot@example.com>
+ssb   4096R/4BB6D45482678BE3 2016-03-10
+```
+
+Then, finally register your key:
+
+```sh
+git config --global user.signingkey 3AA5C34371567BD2
 ```
 
 ## Verifying Git commits are signed
