@@ -3,7 +3,7 @@
 
 SSH_HOME=~/.ssh
 CONFIG_TEMPLATE=config.template
-LOCAL_CONFIG=./config.local
+LOCAL_CONFIG_FILE=config.local
 TARGET_CONFIG="${SSH_HOME}/config"
 PRIVATE_KEY_PATH="${SSH_HOME}/${KEY_NAME}"
 
@@ -17,9 +17,9 @@ check_environment_variables() {
 }
 
 check_local_config() {
-    if [ ! -f "${LOCAL_CONFIG}" ]
+    if [ ! -f "${LOCAL_CONFIG_FILE}" ]
     then
-        echo "${LOCAL_CONFIG} not found! Did you copy it from ${CONFIG_TEMPLATE}?"
+        echo "${LOCAL_CONFIG_FILE} not found! Did you copy it from ${CONFIG_TEMPLATE}?"
         exit -1
     fi
 }
@@ -32,7 +32,7 @@ check_if_private_key_exists() {
     fi
 }
 
-copy_config_template_to_target() {
+install_ssh_config() {
     if [ -f "${TARGET_CONFIG}" ]
     then
         read -p "File ${TARGET_CONFIG} already exists. Overwrite? [y/n] " -n 1 -r
@@ -45,7 +45,11 @@ copy_config_template_to_target() {
         fi
     fi
 
+    LOCAL_DIR=$(pwd)
+    LOCAL_CONFIG="${LOCAL_DIR}/${LOCAL_CONFIG_FILE}"
+
     ln -sf "${LOCAL_CONFIG}" "${TARGET_CONFIG}"
+    echo "Installed SSH settings from ${LOCAL_CONFIG} into ${TARGET_CONFIG}"
 }
 
 add_ssh_identity() {
@@ -55,5 +59,5 @@ add_ssh_identity() {
 check_environment_variables
 check_local_config
 check_if_private_key_exists
-copy_config_template_to_target
+install_ssh_config
 add_ssh_identity
