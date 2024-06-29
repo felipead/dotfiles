@@ -43,16 +43,13 @@ export GIT_TERMINAL_PROMPT=1
 export GPG_TTY=$(tty)
 
 if [ ! -f ~/.gnupg/gpg-agent.conf ]; then
-    mkdir ~/.gnupg
+    mkdir -p ~/.gnupg
     echo "pinentry-program $(which pinentry-mac)" > ~/.gnupg/gpg-agent.conf
     killall gpg-agent
 fi
 
 #========== Local Settings =======================
 
-#
-# See: .local.zsh.template
-#
 local local_file="$HOME/.local.zsh"
 if [ -f $local_file ]
 then
