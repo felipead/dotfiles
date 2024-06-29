@@ -4,7 +4,7 @@ This tutorial assumes you are on macOS using [Homebrew](https://brew.sh).
 
 ## Homebrew bottles
 
-Please install the following Homebrew [bottles](../homebrew/bottles/local.template):
+Please install the following Homebrew [bottles](../homebrew/bottles/local.txt.template):
 
 ```
 brew install gnupg
