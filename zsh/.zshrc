@@ -1,6 +1,7 @@
 export ZSH=~/.oh-my-zsh
 
 ZSH_THEME=agnoster
+DEFAULT_USER=`whoami`
 
 ENABLE_CORRECTION=false
 COMPLETION_WAITING_DOTS=false
