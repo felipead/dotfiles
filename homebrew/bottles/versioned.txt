@@ -4,8 +4,6 @@ coreutils
 # --- Programming ---
 git
 curl
-gsed
-grep
 tree
 jq
 bat
