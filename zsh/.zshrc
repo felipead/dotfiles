@@ -43,6 +43,7 @@ export GIT_TERMINAL_PROMPT=1
 export GPG_TTY=$(tty)
 
 if [ ! -f ~/.gnupg/gpg-agent.conf ]; then
+    mkdir ~/.gnupg
     echo "pinentry-program $(which pinentry-mac)" > ~/.gnupg/gpg-agent.conf
     killall gpg-agent
 fi
