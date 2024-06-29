@@ -1,4 +1,5 @@
 # --- Fonts ---
 font-source-code-pro
+font-source-code-pro-for-powerline
 font-source-sans-pro
 font-hack
