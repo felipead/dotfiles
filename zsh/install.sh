@@ -2,10 +2,12 @@
 
 install_oh_my_zsh() {
     echo "Installing Oh My Zsh..."
-    INSTALL_SCRIPT="install-oh-my-zsh.sh"
-    curl -fsSL "https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh" -o ${INSTALL_SCRIPT}
-    SHELL=zsh RUNZSH=no ZSH=  sh ${INSTALL_SCRIPT}
-    rm -f ${INSTALL_SCRIPT}
+
+    local install_script="install-oh-my-zsh.sh"
+    curl -fsSL "https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh" -o $install_script
+
+    SHELL=zsh RUNZSH=no ZSH=  sh $install_script
+    rm -f $install_script
 }
 
 install_settings() {
