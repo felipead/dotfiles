@@ -15,7 +15,7 @@ Pre-Requisites:
 Setup
 -----
 
-There's a `install.sh` script in this folder. Just run it.
+There's a [`install.sh`](./install.sh) script in this folder. Just run it.
 
 There are two shell configuration files to install:
 
