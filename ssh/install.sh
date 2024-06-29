@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 SSH_HOME=~/.ssh
 CONFIG_TEMPLATE=config.template
 LOCAL_CONFIG_FILE=config.local
