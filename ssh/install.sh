@@ -43,12 +43,13 @@ install_ssh_config() {
             echo "Aborted."
             exit -1
         fi
+        rm -f "${TARGET_CONFIG}"
     fi
 
     LOCAL_DIR=$(pwd)
     LOCAL_CONFIG="${LOCAL_DIR}/${LOCAL_CONFIG_FILE}"
 
-    cp -f "${LOCAL_CONFIG}" "${TARGET_CONFIG}"
+    cp "${LOCAL_CONFIG}" "${TARGET_CONFIG}"
     echo "Installed SSH settings from ${LOCAL_CONFIG} into ${TARGET_CONFIG}"
 }
 
