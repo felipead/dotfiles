@@ -1,6 +1,13 @@
 Settings for SSH
 ================
 
+Guides:
+
+- [How to generate a new SSH key](HOWTO/generate-new-ssh-key.md)
+- [How to add a SSH identity](HOWTO/add-ssh-identity.md)
+
+---
+
 First, [generate a new SSH key](HOWTO/generate-new-ssh-key.md) or restore it from backup.
 
 Then, copy `config.template` to `config.local`, enabling the desired entries.
