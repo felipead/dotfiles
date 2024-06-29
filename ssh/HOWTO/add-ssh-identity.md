@@ -16,4 +16,4 @@ If you want to store and load the passphrase from macOS Keychain, you can use:
 ssh-add -K ~/.ssh/id_your_key
 ```
 
-Please keep in mind though that the macOS Keychain might not be the most secure location to store your SSH passphrase.
+Please keep in mind though that the macOS Keychain might not be the most secure location to store your SSH passphrase. It is better to use a password manager, like 1Password, LastPass or KeePassXC.

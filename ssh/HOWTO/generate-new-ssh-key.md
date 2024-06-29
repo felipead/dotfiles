@@ -28,7 +28,7 @@ ssh-keygen -o -a 64 -t ed25519 -f ~/.ssh/id_github -C "your_github_email"
 
 Please set a very long and secure passphrase. Do not leave this key without a passphrase, as it would make it vulnerable to attackers. Anything above 50-100 characters would suffice. It is preferable to use a long but memorable phrase than a short but cryptic password.
 
-You can store this passphrase inside a secure password manager (eg: 1Password or LastPass).
+You can store this passphrase inside a secure password manager (eg: 1Password, LastPass or KeePassXC).
 
 ## Files and backup
 
