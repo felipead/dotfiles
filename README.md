@@ -1,12 +1,4 @@
-# Developer Environment as Code
-
-_Author:_ Felipe Dornelas
-
----
-
-Builds and installs my development environment, synchronizing settings across different machines. The scripts are flexible enough to allow local customization, as required (eg: personal vs. work computers).
-
-## Index
+# My dotfiles
 
 1. [Homebrew](homebrew/)
 1. [Zsh](zsh/)
@@ -17,11 +9,11 @@ Builds and installs my development environment, synchronizing settings across di
 1. [Sublime Text](sublime-text/)
 1. [Karabiner-Elements](karabiner-elements/)
 
-## Disclaimer
+## Limitations
 
 Only Mac OS X is fully supported at the moment.
 
-I'm a happy [Sublime Text](http://www.sublimetext.com) user and I have no shame to admit it. A long time ago I was a heavy *GNU Emacs* user. After I started using Mac OS X I got frustrated with Emacs' lack of support for `⌘ ←`, `⌘ →`, `⌘ ↓` and `⌘ ↑` shortcuts ([Aquamacs](http://aquamacs.org) is also very ugly). ~I may convert to *Vim* one day.~
+I'm a happy [Sublime Text](http://www.sublimetext.com) user and I have no shame to admit it. A long time ago I was a heavy *GNU Emacs* user. After I started using Mac OS X I got frustrated with Emacs' lack of support for `⌘ ←`, `⌘ →`, `⌘ ↓` and `⌘ ↑` shortcuts ([Aquamacs](http://aquamacs.org) is also very ugly). ~I may convert to *Vim* one day.~ I will never use `vim`.
 
 ## License
 
@@ -36,3 +28,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
+
+---
+
+Copyright © 2024 Felipe Dornelas
