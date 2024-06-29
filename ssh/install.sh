@@ -48,7 +48,7 @@ install_ssh_config() {
     LOCAL_DIR=$(pwd)
     LOCAL_CONFIG="${LOCAL_DIR}/${LOCAL_CONFIG_FILE}"
 
-    ln -sf "${LOCAL_CONFIG}" "${TARGET_CONFIG}"
+    cp -f "${LOCAL_CONFIG}" "${TARGET_CONFIG}"
     echo "Installed SSH settings from ${LOCAL_CONFIG} into ${TARGET_CONFIG}"
 }
 
