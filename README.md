@@ -15,7 +15,7 @@ Builds and installs my development environment, synchronizing settings across di
 1. [Git](git/)
 1. [iTerm2](iterm2/)
 1. [Sublime Text](sublime-text/)
-1. [Karabiner-Elements](karabiner/)
+1. [Karabiner-Elements](karabiner-elements/)
 
 ## Disclaimer
 
