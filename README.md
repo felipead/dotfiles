@@ -13,6 +13,7 @@ Builds and installs my development environment, synchronizing settings across di
 1. [SSH](ssh/)
 1. [GPG](gpg/)
 1. [Git](git/)
+1. [iTerm2](iterm2/)
 1. [Sublime Text](sublime-text/)
 1. [Karabiner-Elements](karabiner/)
 
