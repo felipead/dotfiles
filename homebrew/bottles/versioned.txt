@@ -8,6 +8,7 @@ gsed
 grep
 tree
 jq
+bat
 watch
 ossp-uuid
 the_silver_searcher
