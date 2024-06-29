@@ -45,6 +45,7 @@ install_gitconfig() {
     SOURCE_FILE="${SOURCE_DIR}/${LOCAL_GITCONFIG}"
 
     cp "${SOURCE_FILE}" "${TARGET_FILE}"
+    chmod 600 "${TARGET_FILE}"
     echo "Installed settings ${TARGET_FILE} from ${SOURCE_DIR}"
 }
 
