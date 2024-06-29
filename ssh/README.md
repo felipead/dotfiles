@@ -14,3 +14,5 @@ cp config.template config.local
 ```
 
 The `install.sh` script will load these settings into the SSH daemon. It needs to be run inside this directory.
+
+⚠️ For security reasons, the script will delte `config.local` at the end.

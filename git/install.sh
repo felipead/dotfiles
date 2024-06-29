@@ -42,11 +42,14 @@ install_gitconfig() {
     fi
 
     SOURCE_DIR=$(pwd)
-    SOURCE_FILE="${SOURCE_DIR}/${LOCAL_GITCONFIG}"
+    LOCAL_FILE="${SOURCE_DIR}/${LOCAL_GITCONFIG}"
 
-    cp "${SOURCE_FILE}" "${TARGET_FILE}"
-    chmod 600 "${TARGET_FILE}"
+    cp "${LOCAL_FILE}" "${TARGET_FILE}"
     echo "Installed settings ${TARGET_FILE} from ${SOURCE_DIR}"
+
+    # security hardening
+    chmod 600 "${TARGET_FILE}"
+    rm -f "${LOCAL_FILE}"
 }
 
 check_directory

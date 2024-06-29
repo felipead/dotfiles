@@ -36,7 +36,7 @@ install_ssh_config() {
 
     # security hardening
     chmod 600 "${TARGET_CONFIG}"
-    chmod 600 "${LOCAL_CONFIG}"
+    rm -f "${LOCAL_CONFIG}"
 }
 
 check_local_config

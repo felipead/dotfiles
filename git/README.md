@@ -11,8 +11,6 @@ Before running it, please export the following environment variables:
 
 Example:
 
-```
+```sh
 GIT_NAME="Felipe Dornelas" GIT_EMAIL=foo@example.com GIT_GPG_KEY=3AA5C34371567BD2 ./install.sh
 ```
-
-The script will generate `*.local` files from templates (ex: `gitconfig.local`). Do not edit those files, as the changes will be lost everyime the script is run. Instead, edit the corresponding `*.template` file (ex: `gitconfig.template`).
