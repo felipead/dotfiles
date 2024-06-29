@@ -1,5 +1,5 @@
-Settings for Homebrew
-=====================
+Homebrew
+========
 
 The `install.sh` script will install [Homebrew](http://brew.sh) and [Homebrew Cask](https://caskroom.github.io) packages into the system.
 

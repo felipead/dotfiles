@@ -1,5 +1,5 @@
-Settings for Git
-================
+Git
+===
 
 The `install.sh` script will install my settings for Git. It needs to be run inside this directory.
 

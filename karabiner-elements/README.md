@@ -1,5 +1,5 @@
-Settings for Karabiner Elements
-===============================
+Karabiner Elements
+==================
 
 These are the config files and key mappings for the software [Karabiner Elements](https://karabiner-elements.pqrs.org).
 

@@ -1,5 +1,5 @@
-Settings for Sublime Text 3 
-===========================
+Sublime Text
+============
 
 **DISCLAIMER:** These scripts will only work for Sublime Text 3 under Mac OS X.
 

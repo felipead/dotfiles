@@ -1,5 +1,5 @@
-Settings for iTerm2
-===================
+iTerm2
+======
 
 This contains my profiles for the popular terminal emulator [iTerm2](https://iterm2.com).
 

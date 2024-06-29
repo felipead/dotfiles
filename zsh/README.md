@@ -1,5 +1,5 @@
-Settings for Zsh
-================
+Zsh
+===
 
 I use [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh).
 
