@@ -42,7 +42,16 @@ install_settings() {
 }
 
 make_zsh_default_shell() {
-    chsh -s $(which zsh)
+    if [[ ! "${SHELL}" =~ /zsh$ ]]
+    then
+        read -p "WARNING: Zsh is not the default shell. Make $(which zsh) the default? [y/n] " -n 1 -r
+
+        if [[ $REPLY =~ ^[Yy]$ ]]
+        then
+            echo
+            chsh -s $(which zsh)
+        fi
+    fi
 }
 
 install_oh_my_zsh
