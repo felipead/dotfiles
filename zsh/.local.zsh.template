@@ -11,15 +11,6 @@
 # Use GNU grep over POSIX grep
 # export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
 
-#========== GPG ==================================
-
-# export GPG_TTY=$(tty)
-
-# if [ ! -f ~/.gnupg/gpg-agent.conf ]; then
-#     echo "pinentry-program $(which pinentry-mac)" > ~/.gnupg/gpg-agent.conf
-#     killall gpg-agent
-# fi
-
 #========== Node.js ==============================
 
 # export NVM_DIR="$HOME/.nvm"

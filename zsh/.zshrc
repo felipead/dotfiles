@@ -38,6 +38,15 @@ alias g='git'
 
 export GIT_TERMINAL_PROMPT=1
 
+#========== GPG ==================================
+
+export GPG_TTY=$(tty)
+
+if [ ! -f ~/.gnupg/gpg-agent.conf ]; then
+    echo "pinentry-program $(which pinentry-mac)" > ~/.gnupg/gpg-agent.conf
+    killall gpg-agent
+fi
+
 #========== Local Settings =======================
 
 #
