@@ -51,6 +51,10 @@ install_ssh_config() {
 
     cp "${LOCAL_CONFIG}" "${TARGET_CONFIG}"
     echo "Installed SSH settings from ${LOCAL_CONFIG} into ${TARGET_CONFIG}"
+
+    # security hardening
+    chmod 600 "${TARGET_CONFIG}"
+    rm -f "${LOCAL_CONFIG}"
 }
 
 add_ssh_identity() {
