@@ -25,10 +25,25 @@ create_gitconfig_from_template() {
 }
 
 install_gitconfig() {
-    SOURCE_DIR=$(pwd)
     TARGET_DIR=~
-    SOURCE_FILE="${SOURCE_DIR}/${LOCAL_GITCONFIG}"
     TARGET_FILE="${TARGET_DIR}/${TARGET_GITCONFIG}"
+
+    if [ -f "${TARGET_FILE}" ]
+    then
+        read -p "File ${TARGET_FILE} already exists. Overwrite? [y/n] " -n 1 -r
+        echo
+
+        if [[ ! $REPLY =~ ^[Yy]$ ]]
+        then
+            echo "Aborted."
+            exit -1
+        fi
+        rm -f "${TARGET_FILE}"
+    fi
+
+    SOURCE_DIR=$(pwd)
+    SOURCE_FILE="${SOURCE_DIR}/${LOCAL_GITCONFIG}"
+
     cp "${SOURCE_FILE}" "${TARGET_FILE}"
     echo "Installed settings ${TARGET_FILE} from ${SOURCE_DIR}"
 }
