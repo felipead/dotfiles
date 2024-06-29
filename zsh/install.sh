@@ -12,16 +12,31 @@ install_settings() {
     SOURCE_DIR=$(pwd)
     TARGET_DIR=~
 
-    for ASSET in ".zshrc"
+    for ASSET in ".zshrc" ".local.zsh"
     do
         TARGET_FILE="${TARGET_DIR}/${ASSET}"
         SOURCE_FILE="${SOURCE_DIR}/${ASSET}"
-        if [ ! -f "${SOURCE_FILE}" ]; then
-            echo "${SOURCE_FILE} not found! Are you running this script inside its directory?"
-            exit
-        else
-            ln -sf "${SOURCE_FILE}" "${TARGET_FILE}"
+
+        if [ -f "${SOURCE_FILE}" ]
+        then
+            if [ -f "${TARGET_FILE}" ]
+            then
+                read -p "File ${TARGET_FILE} already exists. Overwrite? [y/n] " -n 1 -r
+                echo
+
+                if [[ ! $REPLY =~ ^[Yy]$ ]]
+                then
+                    echo "Skipped ${ASSET}"
+                    continue
+                fi
+                rm -f "${TARGET_FILE}"
+            fi
+
+            cp "${SOURCE_FILE}" "${TARGET_FILE}"
+            chmod 600 "${TARGET_FILE}"
             echo "Installed settings ${TARGET_FILE} from ${SOURCE_DIR}"
+        else
+            echo "Did not install ${ASSET} because it was not found."
         fi
     done
 }

@@ -54,12 +54,10 @@ fi
 # See: .local.zsh.template
 #
 local local_file="$HOME/.local.zsh"
-if [ ! -f $local_file ]
+if [ -f $local_file ]
 then
-    touch $local_file
+    source $local_file
 fi
-
-source $local_file
 
 #========== Local Environment ====================
 
