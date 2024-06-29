@@ -1,13 +1,13 @@
 #!/bin/bash
 
-GITCONFIG_TEMPLATE_FILE=".gitconfig.template"
-LOCAL_GITCONFIG_FILE=".gitconfig.local"
-INSTALLED_GITCONFIG_FILE=".gitconfig"
+TEMPLATE_GITCONFIG=".gitconfig.template"
+LOCAL_GITCONFIG=".gitconfig.local"
+TARGET_GITCONFIG=".gitconfig"
 
 check_directory() {
-    if [ ! -f "${GITCONFIG_TEMPLATE_FILE}" ]
+    if [ ! -f "${TEMPLATE_GITCONFIG}" ]
     then
-        echo "${GITCONFIG_TEMPLATE_FILE} not found! Are you running this script inside its directory?"
+        echo "${TEMPLATE_GITCONFIG} not found! Are you running this script inside its directory?"
         exit -1
     fi
 }
@@ -21,15 +21,15 @@ check_environment_variables() {
 }
 
 create_gitconfig_from_template() {
-    sed -e "s/__GIT_NAME__/${GIT_NAME}/g" -e "s/__GIT_EMAIL__/${GIT_EMAIL}/g" -e "s/__GIT_GPG_KEY__/${GIT_GPG_KEY}/g" ${GITCONFIG_TEMPLATE_FILE} > ${LOCAL_GITCONFIG_FILE}
+    sed -e "s/__GIT_NAME__/${GIT_NAME}/g" -e "s/__GIT_EMAIL__/${GIT_EMAIL}/g" -e "s/__GIT_GPG_KEY__/${GIT_GPG_KEY}/g" ${TEMPLATE_GITCONFIG} > ${LOCAL_GITCONFIG}
 }
 
 install_gitconfig() {
     SOURCE_DIR=$(pwd)
     TARGET_DIR=~
-    SOURCE_FILE="${SOURCE_DIR}/${LOCAL_GITCONFIG_FILE}"
-    TARGET_FILE="${TARGET_DIR}/${INSTALLED_GITCONFIG_FILE}"
-    ln -sf "${SOURCE_FILE}" "${TARGET_FILE}"
+    SOURCE_FILE="${SOURCE_DIR}/${LOCAL_GITCONFIG}"
+    TARGET_FILE="${TARGET_DIR}/${TARGET_GITCONFIG}"
+    cp "${SOURCE_FILE}" "${TARGET_FILE}"
     echo "Installed settings ${TARGET_FILE} from ${SOURCE_DIR}"
 }
 
