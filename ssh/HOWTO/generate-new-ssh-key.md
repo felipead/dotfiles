@@ -16,7 +16,7 @@ ssh-keygen -o -a 64 -t ed25519 -f ~/.ssh/id_your_key -C "you@example.org"
 where:
 
 - `id_your_key` - you can choose any name for your key. By convention, key names start with `id_*`. For example, if this key is going to be used for GitHub, you can name it `id_github`
-- `you@example.org` - can be any email, a name or any identifier. Example: `felipe.dornelas@work`
+- `you@example.org` - can be any email, a name or any identifier.
 
 example:
 
