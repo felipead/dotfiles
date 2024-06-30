@@ -7,7 +7,9 @@ install_oh_my_zsh() {
     curl -fsSL "https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh" -o $install_script
 
     SHELL=zsh RUNZSH=no ZSH=  sh $install_script
+
     rm -f $install_script
+    chmod 700 "${ZSH}"
 }
 
 install_settings() {
