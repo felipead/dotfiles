@@ -1,9 +1,9 @@
 Sublime Text
 ============
 
-**DISCLAIMER:** These scripts will only work for Sublime Text 3 under Mac OS X.
+**DISCLAIMER:** These scripts will only work for Sublime Text under Mac OS X.
 
-On Mac OS X these settings should be copied to folder `~/Library/Application Support/Sublime Text 3/Packages/User`.
+On Mac OS X these settings should be copied to folder `~/Library/Application Support/Sublime Text/Packages/User`.
 
 There's a `install.sh` script, just run it. The script will also install [Package Control](https://packagecontrol.io).
 
