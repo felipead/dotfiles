@@ -4,6 +4,7 @@ coreutils
 # --- Programming ---
 git
 curl
+wget
 tree
 jq
 bat
