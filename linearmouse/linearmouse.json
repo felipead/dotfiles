@@ -1,0 +1,74 @@
+{
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0",
+  "schemes" : [
+    {
+      "pointer" : {
+        "acceleration" : 3,
+        "disableAcceleration" : false,
+        "speed" : 0.0689655172413792768
+      },
+      "buttons" : {
+        "mappings" : [
+          {
+            "command" : false,
+            "option" : false,
+            "shift" : false,
+            "button" : 2,
+            "control" : false,
+            "action" : "appExpose"
+          },
+          {
+            "command" : false,
+            "option" : false,
+            "shift" : false,
+            "button" : 3,
+            "control" : false,
+            "action" : "missionControl.spaceLeft"
+          },
+          {
+            "command" : false,
+            "option" : false,
+            "shift" : false,
+            "button" : 4,
+            "control" : false,
+            "action" : "missionControl.spaceRight"
+          },
+          {
+            "command" : false,
+            "option" : false,
+            "shift" : false,
+            "button" : 5,
+            "control" : false,
+            "action" : "missionControl"
+          }
+        ]
+      },
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "vendorID" : "0x46d",
+          "productID" : "0xc548",
+          "productName" : "USB Receiver"
+        }
+      },
+      "scrolling" : {
+        "modifiers" : {
+          "vertical" : {
+            "command" : {
+              "type" : "preventDefault"
+            }
+          }
+        },
+        "distance" : {
+          "horizontal" : "auto"
+        },
+        "acceleration" : {
+          "horizontal" : 1
+        },
+        "speed" : {
+          "horizontal" : 0
+        }
+      }
+    }
+  ]
+}
