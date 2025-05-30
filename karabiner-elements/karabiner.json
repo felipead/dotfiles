@@ -40,7 +40,7 @@
                                     "key_code": "a",
                                     "modifiers": {
                                         "mandatory": ["left_control"],
-                                        "optional": ["shift"]
+                                        "optional": ["shift", "command"]
                                     }
                                 },
                                 "to": [
