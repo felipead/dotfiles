@@ -18,158 +18,7 @@
                 },
                 "rules": [
                     {
-                        "description": "[RKS70] Right Ctrl act as Alt",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "identifiers": [
-                                            {
-                                                "product_id": 64112,
-                                                "vendor_id": 9639
-                                            },
-                                            {
-                                                "product_id": 215,
-                                                "vendor_id": 9610
-                                            }
-                                        ],
-                                        "type": "device_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "right_control",
-                                    "modifiers": {
-                                        "mandatory": [],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_alt"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "[RKS70] grave_accent_and_tilde locks the screen",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "identifiers": [
-                                            {
-                                                "product_id": 64112,
-                                                "vendor_id": 9639
-                                            },
-                                            {
-                                                "product_id": 215,
-                                                "vendor_id": 9610
-                                            }
-                                        ],
-                                        "type": "device_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "grave_accent_and_tilde",
-                                    "modifiers": {
-                                        "mandatory": [],
-                                        "optional": []
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "q",
-                                        "modifiers": [
-                                            "command",
-                                            "control"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "[RKS70] ESC act as grave_accent_and_tilde",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "identifiers": [
-                                            {
-                                                "product_id": 64112,
-                                                "vendor_id": 9639
-                                            },
-                                            {
-                                                "product_id": 215,
-                                                "vendor_id": 9610
-                                            }
-                                        ],
-                                        "type": "device_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "escape",
-                                    "modifiers": {
-                                        "mandatory": [],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "grave_accent_and_tilde",
-                                        "modifiers": []
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "identifiers": [
-                                            {
-                                                "product_id": 64112,
-                                                "vendor_id": 9639
-                                            },
-                                            {
-                                                "product_id": 215,
-                                                "vendor_id": 9610
-                                            }
-                                        ],
-                                        "type": "device_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "escape",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "shift"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "grave_accent_and_tilde",
-                                        "modifiers": [
-                                            "shift"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "[RKS70] M1 act as ESC",
+                        "description": "[RKS70] M1 act as grave_accent_and_tilde",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -190,14 +39,13 @@
                                 "from": {
                                     "key_code": "a",
                                     "modifiers": {
-                                        "mandatory": [
-                                            "left_control"
-                                        ]
+                                        "mandatory": ["left_control"],
+                                        "optional": ["shift"]
                                     }
                                 },
                                 "to": [
                                     {
-                                        "key_code": "escape",
+                                        "key_code": "grave_accent_and_tilde",
                                         "modifiers": []
                                     }
                                 ],
