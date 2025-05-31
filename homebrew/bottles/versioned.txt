@@ -11,6 +11,7 @@ bat
 watch
 ossp-uuid
 the_silver_searcher
+tldr
 
 # --- GPG ---
 gnupg

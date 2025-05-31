@@ -1,63 +1,71 @@
 # --- Core apps ---
 # rectangle
-# zoom
 # 1password
 # firefox
 # dropbox
 
 # --- Device drivers ---
 # karabiner-elements
+# linearmouse
 # logi-options-plus
 # logitune
 
 # --- Utilities ---
-# the-unarchiver
+# cleanshot
 # name-mangler
+# the-unarchiver
+
+# --- Maintenance ---
 # appcleaner
+# balenaetcher
 # cleanmymac
 # coconutbattery
-# cleanshot
-# virtualbox
+
+# --- VPN ---
+# tailscale
 # viscosity
 
 # --- Programming ---
-# sublime-text
+# docker
+# goland
+# insomnia
+# intellij-idea-ce
 # iterm2
 # kaleidoscope
-# pycharm-ce
-# goland
-# webstorm
-# rostover
-# intellij-idea-ce
-# docker
-# postman
-# insomnia
-# rapidapi
 # ngrok
+# postman
+# pycharm-ce
+# rapidapi
+# rostover
+# sublime-text
+# webstorm
+
+# --- Communication ---
+# zoom
+
+# --- Video ---
+# 4k-video-downloader+
+# vlc
 
 # --- Music ---
 # spotify
 
 # --- Audio Tools ---
-# native-access
-# fission
 # audio-hijack
+# fission
 # loopback
-
-# --- Video ---
-# vlc
-# 4k-video-downloader
+# native-access
 
 # --- Documents & Design ---
-# typora
-# sip
 # obsidian
+# sip
+# typora
 
 # --- Fonts ---
-# font-open-sans
-# font-source-sans-pro
 # font-cairo
 # font-hack-nerd-font
+# font-open-sans
+# font-source-code-pro-for-powerline
+# font-source-sans-pro
 # font-meslo-for-powerline
 # font-meslo-lg-nerd-font
-# font-source-code-pro-for-powerline
